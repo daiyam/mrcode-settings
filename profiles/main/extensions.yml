@@ -33,6 +33,8 @@ disabled:
     uuid: ef2a5b38-02c4-4193-8561-1f072c209474
   - id: skyapps.fish-vscode
     uuid: b78d2f2b-8801-40a5-ae88-27d420197d49
+  - id: spence-s.linter-xo
+    uuid: 4cfa2f01-9a00-4cb8-8ce5-4c54a06281d8
   - id: sysoev.language-stylus
     uuid: 93ecc089-f396-47b4-8676-7fa3bc156a2c
   - id: tomoki1207.vscode-input-sequence
@@ -82,10 +84,10 @@ enabled:
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
     uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
-  - id: msjsdiag.debugger-for-chrome
-    uuid: 1ec62ca5-d7f9-4ddb-a882-e8d018c0aefd
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
+  - id: pkief.material-icon-theme
+    uuid: 5db78037-f674-459f-a236-db622c427c5b
   - id: redvanworkshop.explorer-exclude-vscode-extension
     uuid: f04f9779-99bf-4904-bd2b-3e7609a0f954
   - id: rpinski.shebang-snippets
@@ -108,6 +110,8 @@ enabled:
     uuid: f046b1cf-eb92-47d6-98f5-93e9529368c2
   - id: vscode-icons-team.vscode-icons
     uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
+  - id: yummygum.city-lights-icon-vsc
+    uuid: 897c115a-dfbf-4c20-bafd-1c13fc5d1d80
   - id: zokugun.cobol-folding
     uuid: 8ac9e33f-ac6a-4c7e-8dbc-f8bab7048d23
   - id: zokugun.explicit-folding
