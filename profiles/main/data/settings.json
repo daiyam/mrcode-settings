@@ -3,11 +3,19 @@
 	// {{{ Editor
 	"editor.autoIndent": "keep",
 	"editor.copyWithSyntaxHighlighting": false,
-	"editor.foldingStrategy": "explicit",
+	// #if(editor="mrcode")
+	// "editor.foldingStrategy": "explicit",
+	// #else
+	// "editor.foldingStrategy": "auto",
+	// #endif
 	"editor.showFoldingLastLine": false,
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
-	"editor.fontWeight": "300",
+	// #if(os="mac")
+	// "editor.fontWeight": "300",
+	// #else
+	// "editor.fontWeight": "500",
+	// #endif
 	"editor.hover.delay": 1000,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
@@ -67,7 +75,8 @@
 	// {{{ Workbench
 	"workbench.colorTheme": "Zokugun Obsidium",
 	"workbench.enableExperiments": false,
-	"workbench.editor.openPositioning": "sort",
+	// #enable(editor="mrcode")
+	// "workbench.editor.openPositioning": "sort",
 	"workbench.editor.decorations.colors": false,
 	"workbench.editor.decorations.badges": false,
 	"workbench.iconTheme": "vscode-icons",
@@ -109,6 +118,9 @@
 	// }}}
 
 	"git.confirmSync": false,
+
+	// #enable(editor="mrcode", os="linux")
+	// "keyboard.platform": "macintosh",
 
 	// Extensions
 	"extensions.ignoreRecommendations": true,
@@ -742,5 +754,5 @@
 			"url": "file:///Users/baptiste/.mrcode/extensions/ibm.zopeneditor-1.2.5/resources/zapp-schema-0.0.2.json"
 		}
 	],
-	"xo.enable": true,
+	// "xo.enable": true,
 }
