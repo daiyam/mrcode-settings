@@ -111,7 +111,6 @@
 	"git.confirmSync": false,
 
 	// Extensions
-	"extensions.ignoreRecommendations": true,
 
 	// {{{ Extension: Code EOL
 	"code-eol.newlineCharacter":".",
@@ -161,15 +160,18 @@
 	// {{{ Extension: SVG Preview
 	"svgPreview.autoOpen": false,
 	// }}}
-	
+
 	// {{{ Extension: Sync Settings
+	// "syncSettings.confirmSync": true,
 	"syncSettings.keybindingsPerPlatform": false,
+	"syncSettings.openOutputOnActivity": true,
+	"syncSettings.showFinishAlert": false,
 	// "syncSettings.ignoredExtensions": [
 	// 	"zokugun.cobol-folding"
 	// ],
 	// "syncSettings.ignoredSettings": [
 	// 	"xo.enable",
-	// 	"syncSettings.ignoredExtensions",
+	// 	"git.confirmSync",
 	// ],
 	// "syncSettings.resources": [
 	// 	"extensions",
@@ -739,5 +741,5 @@
 			"url": "file:///Users/baptiste/.mrcode/extensions/ibm.zopeneditor-1.2.5/resources/zapp-schema-0.0.2.json"
 		}
 	],
-	// "xo.enable": true,
+	"xo.enable": true,
 }
