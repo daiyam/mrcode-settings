@@ -111,6 +111,7 @@
 	"git.confirmSync": false,
 
 	// Extensions
+	"extensions.ignoreRecommendations": true,
 
 	// {{{ Extension: Code EOL
 	"code-eol.newlineCharacter":".",
