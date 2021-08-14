@@ -121,7 +121,7 @@
 	"git.confirmSync": false,
 
 	// #enable(editor="mrcode", os="linux")
-	// "keyboard.platform": "macintosh",
+	// "keyboard.platform": "mac",
 
 	// Extensions
 	"extensions.ignoreRecommendations": true,
@@ -198,6 +198,14 @@
 	"syncSettings.keybindingsPerPlatform": false,
 	"syncSettings.openOutputOnActivity": true,
 	"syncSettings.showFinishAlert": false,
+	// #if(editor="vscode")
+	// "syncSettings.enableExtensions": [
+	// 	"ms-vscode-remote.remote-ssh",
+	// 	"ms-vscode-remote.remote-ssh-edit"
+	// ],
+	// #endif
+	
+	// -- tests
 	// "syncSettings.ignoredExtensions": [
 	// 	"zokugun.cobol-folding"
 	// ],
@@ -753,25 +761,5 @@
 	},
 	// }}}
 
-	"json.schemas": [
-		{
-			"fileMatch": [
-				"cgmanifest.json"
-			],
-			"url": "./.vscode/cgmanifest.schema.json"
-		},
-		{
-			"fileMatch": [
-				"cglicenses.json"
-			],
-			"url": "./.vscode/cglicenses.schema.json"
-		},
-		{
-			"fileMatch": [
-				"/zapp.json"
-			],
-			"url": "file:///Users/baptiste/.mrcode/extensions/ibm.zopeneditor-1.2.5/resources/zapp-schema-0.0.2.json"
-		}
-	],
 	// "xo.enable": true,
 }
