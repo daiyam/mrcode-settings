@@ -198,6 +198,9 @@
 	"syncSettings.keybindingsPerPlatform": false,
 	"syncSettings.openOutputOnActivity": true,
 	"syncSettings.showFinishAlert": false,
+	"syncSettings.ignoredSettings": [
+		"json.schemas"
+	],
 	// #if(editor="vscode")
 	// "syncSettings.enableExtensions": [
 	// 	"ms-vscode-remote.remote-ssh",

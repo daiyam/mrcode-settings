@@ -1,1 +1,3 @@
 keybindingsPerPlatform: false
+ignoredSettings:
+  - json.schemas
