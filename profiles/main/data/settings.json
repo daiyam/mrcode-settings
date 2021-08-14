@@ -51,6 +51,7 @@
 	// }}}
 
 	// {{{ Telemetry
+	"telemetry.enableCrashReporter": false,
 	"telemetry.enableTelemetry": false,
 	// }}}
 
@@ -168,6 +169,24 @@
 
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
+	// }}}
+
+	// {{{ Extension: RemoteSSH
+	// #if(editor="vscode")
+	// "remote.SSH.remotePlatform": {
+	// 	"arch": "linux"
+	// },
+	// "remote.SSH.defaultExtensions": [
+	// 	"chrisdias.vscode-opennewinstance",
+	// 	"eamodio.gitlens",
+	// 	"editorconfig.editorconfig",
+	// 	"jhartell.vscode-line-endings",
+	// 	"paragdiwan.gitpatch",
+	// 	"redvanworkshop.explorer-exclude-vscode-extension",
+	// 	"zokugun.explicit-folding",
+	// 	"zokugun.zokugun-theme"
+	// ],
+	// #endif
 	// }}}
 
 	// {{{ Extension: SVG Preview
