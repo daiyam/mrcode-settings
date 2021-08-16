@@ -83,7 +83,7 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
-	"workbench.settings.useSplitJSON": true,
+	// "workbench.settings.useSplitJSON": true,
 	"workbench.statusBar.feedback.visible": false,
 	// }}}
 
@@ -167,12 +167,16 @@
 	"google-translate.serverDomain": "https://translate.google.com",
 	// }}}
 
+	// {{{ Extension: Mocha Test Explorer
+	"mochaExplorer.files": "test/**/*.ts",
+	"mochaExplorer.require": "ts-node/register",
+	// }}}
+
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
 	// }}}
 
 	// {{{ Extension: RemoteSSH
-	// #if(editor="vscode")
 	// "remote.SSH.remotePlatform": {
 	// 	"arch": "linux"
 	// },
@@ -186,7 +190,6 @@
 	// 	"zokugun.explicit-folding",
 	// 	"zokugun.zokugun-theme"
 	// ],
-	// #endif
 	// }}}
 
 	// {{{ Extension: SVG Preview
@@ -201,12 +204,6 @@
 	"syncSettings.ignoredSettings": [
 		"json.schemas"
 	],
-	// #if(editor="vscode")
-	// "syncSettings.enableExtensions": [
-	// 	"ms-vscode-remote.remote-ssh",
-	// 	"ms-vscode-remote.remote-ssh-edit"
-	// ],
-	// #endif
 	
 	// -- tests
 	// "syncSettings.ignoredExtensions": [

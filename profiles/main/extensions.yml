@@ -68,6 +68,10 @@ enabled:
     uuid: e442b777-54e3-4192-a795-5e201b12f788
   - id: gruntfuggly.todo-tree
     uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
+  - id: hbenl.vscode-mocha-test-adapter
+    uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
+  - id: hbenl.vscode-test-explorer
+    uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
   - id: icai.rem-rpx
     uuid: e7ca8626-dd63-44ac-8fda-bffb14f8e9b3
   - id: jack89ita.copy-filename
@@ -84,6 +88,8 @@ enabled:
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
     uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
+  - id: ms-vscode.test-adapter-converter
+    uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
   - id: pkief.material-icon-theme
