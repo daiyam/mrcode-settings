@@ -5,10 +5,10 @@
 	"editor.copyWithSyntaxHighlighting": false,
 	// #if(editor="mrcode")
 	// "editor.foldingStrategy": "explicit",
+	// "editor.showFoldingLastLine": false,
 	// #else
 	// "editor.foldingStrategy": "auto",
 	// #endif
-	"editor.showFoldingLastLine": false,
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
 	// #if(os="mac")
