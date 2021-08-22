@@ -149,8 +149,10 @@
 			"end": "}}}",
 		},
 	},
-	"explicitFolding.delay": 0,
-	"explicitFolding.autoFold": "all",
+	// #if(editor="mrcode")
+	// "explicitFolding.delay": 0,
+	// "explicitFolding.autoFold": "all",
+	// #endif
 	// }}}
 
 	// {{{ Extension: GitLens
@@ -173,18 +175,12 @@
 	"google-translate.serverDomain": "https://translate.google.com",
 	// }}}
 
-	// {{{ Extension: Mocha Test Explorer
-	"mochaExplorer.files": "test/**/*.ts",
-	"mochaExplorer.require": "ts-node/register",
-	"mochaExplorer.envPath": ".tsnode.env",
-	// }}}
-
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
 	// }}}
 
 	// {{{ Extension: RemoteSSH
-	// #if(editor="vscode")
+	// #if(editor="visual studio code")
 	// "remote.SSH.remotePlatform": {
 	// 	"arch": "linux"
 	// },

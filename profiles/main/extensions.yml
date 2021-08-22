@@ -33,6 +33,7 @@ enabled:
   - bierner.markdown-mermaid
   - bierner.markdown-preview-github-styles
   - chrisdias.vscode-opennewinstance
+  - connorshea.vscode-test-explorer-status-bar
   - eamodio.gitlens
   - editorconfig.editorconfig
   - eg2.vscode-npm-script
