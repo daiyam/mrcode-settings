@@ -1,126 +1,65 @@
 disabled:
-  - id: bungcip.better-toml
-    uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
-  - id: dnicolson.binary-plist
-    uuid: 7b530645-4f49-4222-a851-c18d854275fb
-  - id: fabianlauer.vs-code-xml-format
-    uuid: 7752d5d1-7dab-46f8-bc86-ffca8c2d33e7
-  - id: ibm.zopeneditor
-    uuid: 8e33f644-2820-4b50-943f-91cfb3054d24
-  - id: jakebecker.elixir-ls
-    uuid: bc64531a-9b98-46f5-8ef9-88334d02cd60
-  - id: jebbs.plantuml
-    uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
-  - id: kdcro101.favorites
-    uuid: feda5228-1904-4f14-9634-1f4e51c529df
-  - id: liuji-jim.vue
-    uuid: 25091d5b-da4b-45c3-893e-cb1bd7a27cda
-  - id: mattn.lisp
-    uuid: a386158e-90f6-4fd7-bd5e-ef6c122b503f
-  - id: mechatroner.rainbow-csv
-    uuid: 3792588c-3d35-442d-91ea-fe6a755e8155
-  - id: mohsen1.prettify-json
-    uuid: 67e66172-30c7-4478-8f5d-6eac4ae755dc
-  - id: ms-vscode.vscode-typescript-tslint-plugin
-    uuid: 90a37ca1-92a2-488a-b196-7a8c0b0127ea
-  - id: nickdemayo.vscode-json-editor
-    uuid: 951c33b7-6ec9-4351-8a17-ededc09c997f
-  - id: pucelle.run-on-save
-    uuid: f23b142c-d9c8-4bce-b791-57315e8cf4f3
-  - id: shanoor.vscode-nginx
-    uuid: c856990a-978d-46eb-aa5e-318cd7bfecc6
-  - id: silvenon.mdx
-    uuid: ef2a5b38-02c4-4193-8561-1f072c209474
-  - id: skyapps.fish-vscode
-    uuid: b78d2f2b-8801-40a5-ae88-27d420197d49
-  - id: spence-s.linter-xo
-    uuid: 4cfa2f01-9a00-4cb8-8ce5-4c54a06281d8
-  - id: sysoev.language-stylus
-    uuid: 93ecc089-f396-47b4-8676-7fa3bc156a2c
-  - id: tomoki1207.vscode-input-sequence
-    uuid: 5d5e0952-6ea3-4aa1-adf9-81607539d6f0
-  - id: torn4dom4n.latex-support
-    uuid: 6edd1f7d-7d66-42ee-a32f-62c990bcfa19
-  - id: zowe.vscode-extension-for-zowe
-    uuid: 27d6aafa-49fa-4bf8-99cc-26c858b6e88f
+  - bungcip.better-toml
+  - dnicolson.binary-plist
+  - fabianlauer.vs-code-xml-format
+  - ibm.zopeneditor
+  - jakebecker.elixir-ls
+  - jebbs.plantuml
+  - kdcro101.favorites
+  - liuji-jim.vue
+  - mattn.lisp
+  - mechatroner.rainbow-csv
+  - mohsen1.prettify-json
+  - ms-vscode.vscode-typescript-tslint-plugin
+  - nickdemayo.vscode-json-editor
+  - pkief.material-icon-theme
+  - pucelle.run-on-save
+  - shanoor.vscode-nginx
+  - silvenon.mdx
+  - skyapps.fish-vscode
+  - spence-s.linter-xo
+  - sysoev.language-stylus
+  - tomoki1207.vscode-input-sequence
+  - torn4dom4n.latex-support
+  - yummygum.city-lights-icon-vsc
+  - zokugun.cobol-folding
+  - zowe.vscode-extension-for-zowe
 enabled:
-  - id: acherkashin.virtualbox-extension
-    uuid: 270a84ac-796b-43ee-889a-184df0c325f8
-  - id: alanwalk.markdown-navigation
-    uuid: 8c8e7dfa-5c36-432a-8a14-d2946d91a5d2
-  - id: alefragnani.bookmarks
-    uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
-  - id: alexeyvax.vscode-open-native-terminal
-    uuid: 92e9b671-0527-47a2-9e4a-4b414a8b326c
-  - id: bierner.markdown-mermaid
-    uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
-  - id: bierner.markdown-preview-github-styles
-    uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
-  - id: chrisdias.vscode-opennewinstance
-    uuid: d1232d17-9a0f-4fda-9cf0-e4bf18d567ae
-  - id: eamodio.gitlens
-    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
-  - id: editorconfig.editorconfig
-    uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
-  - id: eg2.vscode-npm-script
-    uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
-  - id: fabiospampinato.vscode-projects-plus
-    uuid: e442b777-54e3-4192-a795-5e201b12f788
-  - id: gruntfuggly.todo-tree
-    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
-  - id: hbenl.vscode-mocha-test-adapter
-    uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
-  - id: hbenl.vscode-test-explorer
-    uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
-  - id: icai.rem-rpx
-    uuid: e7ca8626-dd63-44ac-8fda-bffb14f8e9b3
-  - id: jack89ita.copy-filename
-    uuid: 65abbd6a-7cef-4719-92e6-661f0d2f2121
-  - id: jebbs.markdown-extended
-    uuid: 41c03ed0-b7b8-4476-8d01-926a7e041e69
-  - id: jeff-hykin.code-eol
-    uuid: 54ab7c14-c68f-4cfc-a4e9-dd86747ab096
-  - id: kamikillerto.vscode-colorize
-    uuid: 445ba381-f232-4150-9056-d790bd76d698
-  - id: kaoscript.kaoscript-language
-    uuid: 597e52f3-0cff-4a21-8634-dbdfdadec390
-  - id: mikestead.dotenv
-    uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
-  - id: mitchdenny.ecdc
-    uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
-  - id: ms-vscode.test-adapter-converter
-    uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
-  - id: paragdiwan.gitpatch
-    uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
-  - id: pkief.material-icon-theme
-    uuid: 5db78037-f674-459f-a236-db622c427c5b
-  - id: redvanworkshop.explorer-exclude-vscode-extension
-    uuid: f04f9779-99bf-4904-bd2b-3e7609a0f954
-  - id: rpinski.shebang-snippets
-    uuid: 73b80ea3-7f20-4eb7-ab8c-e70ac36224df
-  - id: ryu1kn.remote-repo-viewer
-    uuid: df972d01-91e4-4902-8227-9f36e4bd8700
-  - id: simonsiefke.svg-preview
-    uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
-  - id: spmeesseman.vscode-taskexplorer
-    uuid: afc7b7f6-486c-4560-94cb-6130ea88cdb8
-  - id: stubailo.ignore-gitignore
-    uuid: c8161b58-83c2-47a1-8223-137f314e3b3f
-  - id: svipas.control-snippets
-    uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
-  - id: takumii.markdowntable
-    uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
-  - id: techer.open-in-browser
-    uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
-  - id: uyiosa-enabulele.reopenclosedtab
-    uuid: f046b1cf-eb92-47d6-98f5-93e9529368c2
-  - id: vscode-icons-team.vscode-icons
-    uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
-  - id: yummygum.city-lights-icon-vsc
-    uuid: 897c115a-dfbf-4c20-bafd-1c13fc5d1d80
-  - id: zokugun.cobol-folding
-    uuid: 8ac9e33f-ac6a-4c7e-8dbc-f8bab7048d23
-  - id: zokugun.explicit-folding
-    uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
-  - id: zokugun.zokugun-theme
-    uuid: 93474243-9833-480b-ab2d-637000ce973d
+  - acherkashin.virtualbox-extension
+  - adam-bender.commit-message-editor
+  - alanwalk.markdown-navigation
+  - alefragnani.bookmarks
+  - alexeyvax.vscode-open-native-terminal
+  - bierner.markdown-mermaid
+  - bierner.markdown-preview-github-styles
+  - chrisdias.vscode-opennewinstance
+  - eamodio.gitlens
+  - editorconfig.editorconfig
+  - eg2.vscode-npm-script
+  - fabiospampinato.vscode-projects-plus
+  - gruntfuggly.todo-tree
+  - hbenl.vscode-mocha-test-adapter
+  - hbenl.vscode-test-explorer
+  - icai.rem-rpx
+  - jack89ita.copy-filename
+  - jebbs.markdown-extended
+  - jeff-hykin.code-eol
+  - kamikillerto.vscode-colorize
+  - kaoscript.kaoscript-language
+  - mikestead.dotenv
+  - mitchdenny.ecdc
+  - ms-vscode.test-adapter-converter
+  - paragdiwan.gitpatch
+  - redvanworkshop.explorer-exclude-vscode-extension
+  - rpinski.shebang-snippets
+  - ryu1kn.remote-repo-viewer
+  - simonsiefke.svg-preview
+  - spmeesseman.vscode-taskexplorer
+  - stubailo.ignore-gitignore
+  - svipas.control-snippets
+  - takumii.markdowntable
+  - techer.open-in-browser
+  - uyiosa-enabulele.reopenclosedtab
+  - vscode-icons-team.vscode-icons
+  - zokugun.explicit-folding
+  - zokugun.zokugun-theme
