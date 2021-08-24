@@ -43,9 +43,9 @@ svipas.control-snippets: '{"disabled_extensions":[{"id":"vscode.bat"},{"id":"vsc
 workbench.view.extension.test.state.hidden: '[{"id":"workbench.view.testing","isHidden":false},{"id":"test-explorer","isHidden":false},{"id":"mocha","isHidden":false}]'
 workbench.panel.dimension: bottom
 workbench.sidebar.size: "555"
-workbench.panel.size: "246"
 workbench.grid.width: "2510"
 workbench.grid.height: "1417"
+workbench.panel.size: "229"
 workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   \"themeIcon\":{\"id\":\"explorer-view-icon\"},\"name\":\"Explorer\",\"isBuilt\
   in\":true,\"views\":[{\"when\":\"openEditorsVisible\"},{},{},{\"when\":\"time\

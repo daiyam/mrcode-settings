@@ -33,8 +33,6 @@ disabled:
     uuid: ef2a5b38-02c4-4193-8561-1f072c209474
   - id: skyapps.fish-vscode
     uuid: b78d2f2b-8801-40a5-ae88-27d420197d49
-  - id: spence-s.linter-xo
-    uuid: 4cfa2f01-9a00-4cb8-8ce5-4c54a06281d8
   - id: sysoev.language-stylus
     uuid: 93ecc089-f396-47b4-8676-7fa3bc156a2c
   - id: tomoki1207.vscode-input-sequence
@@ -108,6 +106,8 @@ enabled:
     uuid: 73b80ea3-7f20-4eb7-ab8c-e70ac36224df
   - id: ryu1kn.remote-repo-viewer
     uuid: df972d01-91e4-4902-8227-9f36e4bd8700
+  - id: samverschueren.linter-xo
+    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: SimonSiefke.svg-preview
     uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
   - id: spmeesseman.vscode-taskexplorer
