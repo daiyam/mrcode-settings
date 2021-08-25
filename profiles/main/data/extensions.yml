@@ -27,6 +27,8 @@ disabled:
     uuid: 5db78037-f674-459f-a236-db622c427c5b
   - id: pucelle.run-on-save
     uuid: f23b142c-d9c8-4bce-b791-57315e8cf4f3
+  - id: samverschueren.linter-xo
+    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: shanoor.vscode-nginx
     uuid: c856990a-978d-46eb-aa5e-318cd7bfecc6
   - id: silvenon.mdx
@@ -106,8 +108,6 @@ enabled:
     uuid: 73b80ea3-7f20-4eb7-ab8c-e70ac36224df
   - id: ryu1kn.remote-repo-viewer
     uuid: df972d01-91e4-4902-8227-9f36e4bd8700
-  - id: samverschueren.linter-xo
-    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: SimonSiefke.svg-preview
     uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
   - id: spmeesseman.vscode-taskexplorer
