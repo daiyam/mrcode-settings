@@ -152,12 +152,12 @@
 			"end": "}}}",
 		},
 	},
+	"explicitFolding.additionalSchemes": [
+		"gitlens"
+	],
 	// #if(editor="mrcode")
 	// "explicitFolding.delay": 0,
 	// "explicitFolding.autoFold": "all",
-	// "explicitFolding.additionalSchemes": [
-	// 	"gitlens"
-	// ],
 	// #endif
 	// }}}
 
