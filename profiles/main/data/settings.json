@@ -427,7 +427,7 @@
 		// "explicitFolding.debug": true,
 		"explicitFolding.rules": [
 			{
-				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z]+)[^>\\/]*>",
+				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
 				"endRegex": "<\\/\\1>"
 			},
 		]
@@ -782,4 +782,10 @@
 	},
 	// }}}
 
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"stash-push:command",
+		"switch:command",
+		"branch-create:command"
+	],
 }

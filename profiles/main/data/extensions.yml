@@ -110,6 +110,8 @@ enabled:
     uuid: df972d01-91e4-4902-8227-9f36e4bd8700
   - id: SimonSiefke.svg-preview
     uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
+  - id: slevesque.vscode-hexdump
+    uuid: 95dcafc3-2012-45bf-aac1-0b5345e0daf1
   - id: spmeesseman.vscode-taskexplorer
     uuid: afc7b7f6-486c-4560-94cb-6130ea88cdb8
   - id: stubailo.ignore-gitignore
