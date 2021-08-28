@@ -162,12 +162,17 @@
 	// }}}
 
 	// {{{ Extension: GitLens
-	"gitlens.advanced.telemetry.enabled": false,
 	"gitlens.advanced.messages": {
 		"suppressLineUncommittedWarning": true
 	},
 	"gitlens.codeLens.enabled": false,
 	"gitlens.currentLine.enabled": false,
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"stash-push:command",
+		"switch:command",
+		"branch-create:command"
+	],
 	"gitlens.menus": {
 		"editorGroup": {
 			"blame": false,
@@ -782,10 +787,4 @@
 	},
 	// }}}
 
-	"gitlens.gitCommands.skipConfirmations": [
-		"fetch:command",
-		"stash-push:command",
-		"switch:command",
-		"branch-create:command"
-	],
 }
