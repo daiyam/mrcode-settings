@@ -87,7 +87,6 @@
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
 	"workbench.settings.useSplitJSON": true,
-	"workbench.statusBar.feedback.visible": false,
 	// }}}
 
 	// {{{ Files
@@ -128,6 +127,7 @@
 
 	// Extensions
 	"extensions.ignoreRecommendations": true,
+	"redhat.telemetry.enabled": false,
 
 	// {{{ Extension: Code EOL
 	"code-eol.newlineCharacter":".",
@@ -143,6 +143,107 @@
 	"commit-message-editor.view.defaultView": "form",
 	"commit-message-editor.view.saveAndClose": true,
 	"commit-message-editor.view.useTabs": true,
+	"commit-message-editor.tokens": [
+		{
+			"name": "type",
+			"label": "Type",
+			"description": "Type of changes",
+			"type": "enum",
+			"options": [
+				{
+					"label": "---",
+					"value": ""
+				},
+				{
+					"label": "build",
+					"description": "Changes related to the build system (involving scripts, configurations or tools) and package dependencies"
+				},
+				{
+					"label": "ci",
+					"description": "Changes related to the continuous integration and deployment system (involving scripts, configurations or tools)"
+				},
+				{
+					"label": "docs",
+					"description": "Documentation only changes"
+				},
+				{
+					"label": "enhance",
+					"description": "Makes an ability/functionality even better"
+				},
+				{
+					"label": "feat",
+					"description": "Changes related to new abilities or functionalities"
+				},
+				{
+					"label": "fix",
+					"description": "Changes related to bug fixes"
+				},
+				{
+					"label": "perf",
+					"description": "A code change that improves performance"
+				},
+				{
+					"label": "refactor",
+					"description": "A code change that neither fixes a bug nor adds a feature"
+				},
+				{
+					"label": "revert",
+					"description": "Reverts a previous commit"
+				},
+				{
+					"label": "style",
+					"description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
+				},
+				{
+					"label": "test",
+					"description": "Adding missing tests or correcting existing tests"
+				},
+				{
+					"label": "vcs",
+					"description": "Changes related to the version control system (involving scripts, configurations or tools)"
+				},
+			],
+		},
+		{
+			"label": "Scope",
+			"name": "scope",
+			"description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+			"type": "text",
+			"multiline": false,
+			"prefix": "(",
+			"suffix": ")"
+		},
+		{
+			"label": "Short description",
+			"name": "description",
+			"description": "Short description in the subject line.",
+			"type": "text",
+			"multiline": false
+		},
+		{
+			"label": "Body",
+			"name": "body",
+			"description": "Optional body",
+			"type": "text",
+			"multiline": true,
+			"lines": 5,
+			"maxLines": 10
+		},
+		{
+			"label": "Breaking change",
+			"name": "breaking_change",
+			"type": "boolean",
+			"value": "BREAKING CHANGE: ",
+			"default": false
+		},
+		{
+			"label": "Footer",
+			"name": "footer",
+			"description": "Optional footer",
+			"type": "text",
+			"multiline": true
+		}
+	],
 	// }}}
 
 	// {{{ Extension: Explicit Folding
@@ -265,6 +366,10 @@
 	// {{{ Extension: vscode-icons
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
+	// }}}
+		
+	// {{{ Extension: YAML
+	"yaml.schemaStore.enable": false,
 	// }}}
 
 	// {{{ Extension: Z Open Editor
@@ -430,12 +535,12 @@
 
 	"[html]": {
 		// "explicitFolding.debug": true,
-		"explicitFolding.rules": [
-			{
-				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
-				"endRegex": "<\\/\\1>"
-			},
-		]
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
+		// 		"endRegex": "<\\/\\1>"
+		// 	},
+		// ]
 	},
 	// }}}
 
@@ -743,6 +848,10 @@
 		// 	},
 		// 	{
 		// 		"separatorRegex": "#\\s*%%"
+		// 	},
+		// 	{
+		// 		"begin": "(",
+		// 		"end": ")",
 		// 	},
 		// 	{
 		// 		"indentation": true,

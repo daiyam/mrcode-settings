@@ -142,5 +142,10 @@
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
-    }
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.toggleToOn",
+        "when": "!config.breadcrumbs.enabled"
+    },
 ]
