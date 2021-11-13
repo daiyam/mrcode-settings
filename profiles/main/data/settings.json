@@ -55,6 +55,7 @@
 	// {{{ Telemetry
 	"telemetry.enableCrashReporter": false,
 	"telemetry.enableTelemetry": false,
+	"telemetry.telemetryLevel": "off",
 	// }}}
 
 	// {{{ Terminal
@@ -67,6 +68,11 @@
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.tabs.hideCondition": "never",
+	// }}}
+	
+	// {{{ Update
+	// #enable(editor!="mrcode")
+	// "update.mode": "manual",
 	// }}}
 
 	// {{{ Window
@@ -272,7 +278,8 @@
 		"fetch:command",
 		"stash-push:command",
 		"switch:command",
-		"branch-create:command"
+		"branch-create:command",
+		"push:command"
 	],
 	"gitlens.menus": {
 		"editorGroup": {

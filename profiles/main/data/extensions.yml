@@ -135,4 +135,4 @@ enabled:
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
   - id: zokugun.zokugun-theme
-    uuid: 93474243-9833-480b-ab2d-637000ce973d
+    uuid: null
