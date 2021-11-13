@@ -1,0 +1,8 @@
+keybindingsPerPlatform: false
+ignoredSettings:
+  - json.schemas
+resources:
+  - extensions
+  - keybindings
+  - settings
+  - snippets
