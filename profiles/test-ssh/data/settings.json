@@ -1,8 +1,896 @@
+// Place your settings in this file to overwrite the default settings
 {
-    "remote.SSH.remotePlatform": {
-        "arch": "linux"
-    },
-    "update.mode": "none",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Zokugun Obsidium"
+	// {{{ Editor
+	"editor.autoIndent": "keep",
+	"editor.copyWithSyntaxHighlighting": false,
+	// #if(editor="mrcode")
+	// "editor.foldingStrategy": "explicit",
+	// "editor.showFoldingLastLine": false,
+	// #else
+	// "editor.foldingStrategy": "auto",
+	// #endif
+	"editor.fontSize": 14,
+	"editor.fontFamily": "Fira Code",
+	// #if(os="mac")
+	// "editor.fontWeight": "300",
+	// #elif(os="windows")
+	// "editor.fontWeight": "400",
+	// #else
+	// "editor.fontWeight": "500",
+	// #endif
+	"editor.hover.delay": 1000,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
+	"editor.renderWhitespace": "none",
+	"editor.occurrencesHighlight": false,
+	"editor.quickSuggestions": {
+		"other": false,
+		"comments": false,
+		"strings": false
+	},
+	"editor.renderControlCharacters": true,
+	"editor.selectionHighlight": false,
+	"editor.showFoldingControls": "always",
+	"editor.trimAutoWhitespace": false,
+	"editor.unusualLineTerminators": "auto",
+	"editor.wordWrap": "off",
+	"breadcrumbs.enabled": false,
+	// }}}
+
+	// {{{ File Explorer
+	"explorer.autoReveal": false,
+	"explorer.confirmDelete": false,
+	"explorer.openEditors.visible": 0,
+	"problems.decorations.enabled": false,
+	// }}}
+
+	// {{{ Search
+	"search.showLineNumbers": true,
+	// }}}
+
+	// {{{ Security
+	"security.workspace.trust.enabled": false,
+	// }}}
+
+	// {{{ Telemetry
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"telemetry.telemetryLevel": "off",
+	// }}}
+
+	// {{{ Terminal
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.lineHeight": 1.2,
+	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.scrollback": 10000,
+	"terminal.integrated.tabs.hideCondition": "never",
+	// }}}
+	
+	// {{{ Update
+	// #enable(editor!="mrcode")
+	// "update.mode": "manual",
+	// }}}
+
+	// {{{ Window
+	"window.newWindowDimensions": "maximized",
+	"window.restoreFullscreen": true,
+	"window.restoreWindows": "all",
+	"window.title": "${activeEditorLong}",
+	// }}}
+
+	// {{{ Workbench
+	"workbench.colorTheme": "Zokugun Obsidium",
+	"workbench.enableExperiments": false,
+	// #enable(editor="mrcode")
+	// "workbench.editor.openPositioning": "sort",
+	"workbench.editor.decorations.colors": false,
+	"workbench.editor.decorations.badges": false,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.settings.editor": "json",
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"workbench.settings.useSplitJSON": true,
+	// }}}
+
+	// {{{ Files
+	"files.associations": {
+		"*.COBOL*": "cobol",
+		"*.COB*": "cobol",
+		"*.COBCOPY*": "cobol",
+		"*.COPYBOOK*": "cobol",
+		"*.COPY*": "cobol",
+		"*.PL1*": "pl1",
+		"*.PLI*": "pl1",
+		"*.INC*": "pl1",
+		"*.INCLUDE*": "pl1",
+		"*.JCL*": "jcl",
+		"*.ASM*": "hlasm",
+		"*.ASSEMBLE*": "hlasm",
+		"*.HLASM*": "hlasm",
+		"*.HLA*": "hlasm",
+		"*.ksb": "javascript",
+		"*.ksm": "json",
+		"tslint.json": "jsonc",
+		"cglicenses.json": "jsonc",
+		".all-contributorsrc": "json",
+		".lintstagedrc": "json",
+		".huskyrc": "json",
+	},
+	"files.eol": "\n",
+	// }}}
+
+	// {{{ CodeLens
+	"debug.javascript.codelens.npmScripts": "never",
+	// }}}
+
+	"git.confirmSync": false,
+
+	// #enable(editor="mrcode", os="linux")
+	// "keyboard.platform": "mac",
+
+	// Extensions
+	"extensions.ignoreRecommendations": true,
+	"redhat.telemetry.enabled": false,
+
+	// {{{ Extension: Code EOL
+	"code-eol.newlineCharacter":".",
+	"code-eol.newlineCharacterStyle" : {
+		"color": "#009999",
+		"opacity": 0.7
+	},
+	"code-eol.returnCharacter": "←",
+	"code-eol.crlfCharacter": "↵",
+	// }}}
+	
+	// {{{ Extension: Commit Message Editor
+	"commit-message-editor.view.defaultView": "form",
+	"commit-message-editor.view.saveAndClose": true,
+	"commit-message-editor.view.useTabs": true,
+	"commit-message-editor.tokens": [
+		{
+			"name": "type",
+			"label": "Type",
+			"description": "Type of changes",
+			"type": "enum",
+			"options": [
+				{
+					"label": "---",
+					"value": ""
+				},
+				{
+					"label": "build",
+					"description": "Changes related to the build system (involving scripts, configurations or tools) and package dependencies"
+				},
+				{
+					"label": "ci",
+					"description": "Changes related to the continuous integration and deployment system (involving scripts, configurations or tools)"
+				},
+				{
+					"label": "docs",
+					"description": "Documentation only changes"
+				},
+				{
+					"label": "enhance",
+					"description": "Makes an ability/functionality even better"
+				},
+				{
+					"label": "feat",
+					"description": "Changes related to new abilities or functionalities"
+				},
+				{
+					"label": "fix",
+					"description": "Changes related to bug fixes"
+				},
+				{
+					"label": "perf",
+					"description": "A code change that improves performance"
+				},
+				{
+					"label": "refactor",
+					"description": "A code change that neither fixes a bug nor adds a feature"
+				},
+				{
+					"label": "revert",
+					"description": "Reverts a previous commit"
+				},
+				{
+					"label": "style",
+					"description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
+				},
+				{
+					"label": "test",
+					"description": "Adding missing tests or correcting existing tests"
+				},
+				{
+					"label": "vcs",
+					"description": "Changes related to the version control system (involving scripts, configurations or tools)"
+				},
+			],
+		},
+		{
+			"label": "Scope",
+			"name": "scope",
+			"description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+			"type": "text",
+			"multiline": false,
+			"prefix": "(",
+			"suffix": ")"
+		},
+		{
+			"label": "Short description",
+			"name": "description",
+			"description": "Short description in the subject line.",
+			"type": "text",
+			"multiline": false
+		},
+		{
+			"label": "Body",
+			"name": "body",
+			"description": "Optional body",
+			"type": "text",
+			"multiline": true,
+			"lines": 5,
+			"maxLines": 10
+		},
+		{
+			"label": "Breaking change",
+			"name": "breaking_change",
+			"type": "boolean",
+			"value": "BREAKING CHANGE: ",
+			"default": false
+		},
+		{
+			"label": "Footer",
+			"name": "footer",
+			"description": "Optional footer",
+			"type": "text",
+			"multiline": true
+		}
+	],
+	// }}}
+
+	// {{{ Extension: Explicit Folding
+	"explicitFolding.rules": {
+		"*": {
+			"begin": "{{{",
+			"end": "}}}",
+		},
+	},
+	"explicitFolding.additionalSchemes": [
+		"gitlens"
+	],
+	// #if(editor="mrcode")
+	// "explicitFolding.delay": 0,
+	// "explicitFolding.autoFold": "all",
+	// #endif
+	// }}}
+
+	// {{{ Extension: GitLens
+	"gitlens.advanced.messages": {
+		"suppressLineUncommittedWarning": true
+	},
+	"gitlens.codeLens.enabled": false,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"stash-push:command",
+		"switch:command",
+		"branch-create:command",
+		"push:command"
+	],
+	"gitlens.menus": {
+		"editorGroup": {
+			"blame": false,
+			"compare": false
+		}
+	},
+	// }}}
+
+	// {{{ Extension: Google Translate
+	"google-translate.firstLanguage": "en-us",
+	"google-translate.serverDomain": "https://translate.google.com",
+	// }}}
+
+	// {{{ Extension: Rem rpx px - Converter
+	"remrpx.remEqual": 16,
+	// }}}
+
+	// {{{ Extension: RemoteSSH
+	// #if(editor="visual studio code")
+	// "remote.SSH.remotePlatform": {
+	// 	"arch": "linux"
+	// },
+	// #endif
+	// }}}
+
+	// {{{ Extension: SVG Preview
+	"svgPreview.autoOpen": false,
+	// }}}
+
+	// {{{ Extension: Sync Settings
+	// "syncSettings.confirmSync": true,
+	"syncSettings.keybindingsPerPlatform": false,
+	"syncSettings.openOutputOnActivity": true,
+	"syncSettings.showFinishAlert": false,
+	"syncSettings.ignoredSettings": [
+		"json.schemas"
+	],
+	
+	// -- tests
+	// "syncSettings.ignoredExtensions": [
+	// 	"zokugun.cobol-folding"
+	// ],
+	// "syncSettings.ignoredSettings": [
+	// 	"xo.enable",
+	// 	"git.confirmSync",
+	// ],
+	// "syncSettings.resources": [
+	// 	"extensions",
+	// 	"keybindings",
+	// 	"settings",
+	// ]
+	// }}}
+
+	// {{{ Extension: Task Explorer
+	"taskExplorer.enableExplorerView": false,
+	"taskExplorer.enableSideBar": true,
+	"taskExplorer.enableTsc": false,
+	// }}}
+
+	// {{{ Extension: Test Explorer UI
+	"testExplorer.codeLens": false,
+	// }}}
+
+	// {{{ Extension: Todo Tree
+	"todo-tree.filtering.ignoreGitSubmodules": true,
+	"todo-tree.filtering.useBuiltInExcludes": "file excludes",
+	"todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"[ ]",
+		"[x]"
+	],
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	"todo-tree.tree.showScanModeButton": false,
+	// }}}
+
+	// {{{ Extension: vscode-icons
+	"vsicons.dontShowNewVersionMessage": true,
+	"vsicons.projectDetection.disableDetect": true,
+	// }}}
+		
+	// {{{ Extension: YAML
+	"yaml.schemaStore.enable": false,
+	// }}}
+
+	// {{{ Extension: Z Open Editor
+	"zopeneditor.welcomePage.show": false,
+	// }}}
+
+	// {{{ Extension: Zowe Explorer
+	"Zowe-DS-Persistent": {
+		"persistence": true,
+		"favorites": [],
+		"history": [],
+		"sessions": [],
+		"fileHistory": [],
+		"searchHistory": []
+	},
+	"Zowe-USS-Persistent": {
+		"persistence": true,
+		"favorites": [],
+		"history": [],
+		"sessions": [],
+		"fileHistory": [],
+		"searchHistory": []
+	},
+	"Zowe-Jobs-Persistent": {
+		"persistence": true,
+		"favorites": [],
+		"history": [],
+		"sessions": [],
+		"fileHistory": [],
+		"searchHistory": []
+	},
+	// }}}
+
+	// {{{ Language: Cobol
+	"[cobol]": {
+		"explicitFolding.debug": true,
+		// "explicitFolding.rules": [
+		// 	// Bloc commentaires
+		// 	{
+		// 		"beginRegex": "(?<=^.{6})\\*",
+		// 		"endRegex": "(?<=^.{6})[^*]",
+		// 		"nested": false,
+		// 		"foldLastLine": false,
+		// 		"kind": "comment"
+		// 	},
+		// 	// Division
+		// 	{
+		// 		"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?=\\s+(?i:DIVISION))",
+		// 		"strict": false,
+		// 		"nested": [
+		// 			// Section
+		// 			{
+		// 				"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?=\\s+(?i:SECTION))",
+		// 				"strict": false,
+		// 				"nested": [
+		// 					// Paragraph
+		// 					{
+		// 						"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?!\\s+(?i:SECTION|DIVISION))",
+		// 						"strict": false,
+		// 						"nested": [
+		// 							// Page eject
+		// 							{
+		// 								"separatorRegex": "(?<=^.{6})\\/"
+		// 							}
+		// 						]
+		// 					}
+		// 				]
+		// 			}
+		// 		]
+		// 	}
+		// ]
+	},
+	// }}}
+
+	// {{{ Language: C++
+	"[cpp]": {
+		"explicitFolding.debug": true,
+		"explicitFolding.rules": [
+			// {
+			// 	"beginRegex": "#if(?:n?def)?",
+			// 	"middleRegex": "#el(?:se|if)",
+			// 	"endRegex": "#endif"
+			// },
+			// {
+			// 	"begin": "\/*",
+			// 	"end": "*\/",
+			// 	"nested": false
+			// },
+			// {
+			// 	"begin": "//",
+			// 	"continuation": "\\",
+			// 	"nested": false
+			// },
+			// {
+			// 	"beginRegex": "#begin ([\\w]+)",
+			// 	"endRegex": "#end \\1"
+			// },
+			// {
+			// 	"beginRegex": "#start ([\\w]+)",
+			// 	"endRegex": "#stop \\1"
+			// },
+			// // zero-length regex
+			// {
+			// 	"beginRegex": "\\/\\/",
+			// 	"endRegex": "(?<!\\\\)$",
+			// },
+			// // raw strings
+			// {
+			// 	"beginRegex": "(?:L|u8|u|U|)R\"([^\\s\\(\\)\\\\]{0,16})\\(",
+			// 	"endRegex": "\\)\\1\"",
+			// 	// "nested": false,
+			// 	"foldLastLine": false,
+			// },
+			// // escape strings
+			// {
+			// 	"beginRegex": "\"(?:[^\"\\\\]|\\.)*(?=\")",
+			// 	"endRegex": "\"",
+			// 	"nested": false,
+			// },
+			// { // "..." (not actually folded, but forces contents to be ignored)
+			// 	"beginRegex": "(?!)",
+			// 	"endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
+			// },
+			// { // '...' (not actually folded, but forces contents to be ignored)
+			// 	"beginRegex": "(?!)",
+			// 	"endRegex": "'(?:[^'\\\\]|\\\\.)*'",
+			// },
+			// {
+			// 	"begin": "(",
+			// 	"end": ")",
+			// 	"foldLastLine": false,
+			// },
+			// {
+			// 	"begin": "{",
+			// 	"end": "}",
+			// },
+			{
+                "beginRegex": "\"([^\\(]{0,16})\\(",
+                "endRegex": "\\)\\1\"",
+                "foldLastLine": false,
+            },
+		]
+	},
+	// }}}
+
+	// {{{ Language: Elixir
+	"[elixir]": {
+		// "editor.foldingStrategy": "explicit & indentation",
+		"explicitFolding.rules": [
+			{
+				"beginRegex": "#\\s*region\\b",
+				"endRegex": "#\\s*endregion\\b"
+			},
+			{
+				"indentation": true
+			}
+		]
+	},
+	// }}}
+
+	// {{{ Language: HTML
+	"html.autoClosingTags": false,
+
+	"[html]": {
+		// "explicitFolding.debug": true,
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
+		// 		"endRegex": "<\\/\\1>"
+		// 	},
+		// ]
+	},
+	// }}}
+
+	// {{{ Language: JavaScript
+	"javascript.format.semicolons": "remove",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"[javascript]": {
+		// "explicitFolding.debug": true,
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"begin": "{",
+		// 		"end": "}",
+		// 	},
+		// 	{
+		// 		"indentation": true,
+		// 		"offSide": true,
+		// 	},
+		// ]
+		// "explicitFolding.rules":[
+		// 	{
+		// 		"beginRegex": "(?:\\/\\/{|\\/\\*{)",
+		// 		"endRegex": "(?:\\/\\/}|\\/\\*})"
+		// 	}
+		// ]
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "^import\\b",
+		// 		"whileRegex": "^(?:import\\b|\\/\\/)",
+		// 		"autoFold": true
+		// 	}
+		// ],
+		// "explicitFolding.autoFold": "none",
+	},
+	// }}}
+
+	// {{{ Language: JCL
+	"[jcl]": {
+		"explicitFolding.autoFold": "none",
+		"explicitFolding.debug": true,
+		"explicitFolding.rules": [
+			// { // Bloc commentaires
+			// 	"kind": "comment",
+			// 	"whileRegex": "^\\/\\/\\*"
+			// },
+			// { // JOB
+			// 	"separatorRegex": "^\\/\\/[^*]\\S* +JOB ",
+			// 	"strict": "never",
+			// 	"nested": [
+			// 		{ // PROC - PEND
+			// 			"name": "proc",
+			// 			"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
+			// 			"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
+			// 			"nested": [
+			// 				{ // EXEC
+			// 					"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
+			// 					"nested": [
+			// 						{ // DD
+			// 							"separatorRegex": "^\\/\\/[^*]\\S* +DD ",
+			// 						}
+			// 					]
+			// 				}
+			// 			]
+			// 		}
+			// 	]
+			// }
+			// { // JOB
+			// 	"name": "job",
+			// 	"separatorRegex": "^\\/\\/[^*]\\S* +JOB(?: |$)",
+			// 	"strict": "never",
+			// 	"nested": [
+			// 		{ // PROC - PEND
+			// 			"name": "proc",
+			// 			"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
+			// 			"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
+			// 			"strict": "never",
+			// 			"nested": [
+			// 				{ // EXEC
+			// 					"name": "exec",
+			// 					"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
+			// 					"strict": "never",
+			// 					"nested": [
+			// 						{
+			// 							"name": "dd",
+			// 							"beginRegex": "^\\/\\/[^*]\\S* +DD .*,$",
+			// 							"endRegex": "^\\/\\/(?!(?:\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$)))"
+			// 						},
+			// 						{ // Bloc commentaires
+			// 							"whileRegex": "^\\/\\/\\*",
+			// 							"kind": "comment"
+			// 						},
+			// 					]
+			// 				}
+			// 			]
+			// 		}
+			// 	]
+			// }
+		//	{// Bloc commentaires
+		//	 //"name": "comment",
+		//	 //"beginRegex": "^\\/\\/\\*",
+		//	 //"whileRegex": "^\\/\\/\\*",
+		//	 //"foldLastLine": true,
+		//	 //"nested": false,
+		//	 //"kind": "comment"
+
+		//		"name": "comment"
+		//	 ,"beginRegex": "^\\/\\/\\*"
+		//	 ,"endRegex": "^\\/\\/[^*]"
+		//	 ,"nested": false
+		//	 ,"consumeEnd": false
+		//	 ,"kind": "comment"
+
+		//	},
+		//	{// DD
+		//	 "name": "dd",
+		//	 //"separatorRegex": "^\\/\\/[^*]\\S* +DD "
+		//	 "beginRegex": "^\\/\\/[^*]\\S* +DD ",
+		//	 "continuationRegex": "^\\/\\/(\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$))",
+		//	 "nested": true
+		//	},
+
+		//	{// JOB
+		//	 "name": "job",
+		//	 "separatorRegex": "^\\/\\/[^*]\\S* +JOB(?: |$)",
+		//	 "strict": "never",
+		//	 "nested": [
+		//		{// PROC - PEND
+		//		 "name": "proc",
+		//		 "beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
+		//		 "endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
+		//		 "foldLastLine": true,
+		//		 "strict": "never",
+		//		 "nested": [
+		//			 {// EXEC
+		//				"name": "exec",
+		//				"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
+		//				"strict": "never",
+		//				"nested": true
+		//				//"nested": [
+		//				//	 {// DD
+		//				//	"name": "dd",
+		//				//	//"separatorRegex": "^\\/\\/[^*]\\S* +DD "
+		//				//	"beginRegex": "^\\/\\/[^*]\\S* +DD ",
+		//				//	"continuationRegex": "^\\/\\/(\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$))"
+		//				//	 }
+		//				// ]
+		//			 }
+		//			 ]
+		//		 }
+		//		 ]
+		//	 }
+ // Hiérarchie JCL
+{// JOB
+   "name": "job"
+  ,"separatorRegex": "^\\/\\/[^*]\\S* +JOB(?:( |$))"
+  ,"strict": "never"
+  ,"nested": [
+    {// PROC - PEND
+    "name": "proc"
+    ,"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)"
+    ,"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)"
+    ,"nested": [
+        {// STEP
+        "name": "exec"
+        ,"separatorRegex": "^\\/\\/[^*]\\S* +EXEC "
+        ,"nested": [
+        {// Bloc commentaires
+        "name": "comment"
+        ,"whileRegex": "^\\/\\/\\*"
+        ,"kind": "comment"
+        }
+        ,{// DD INSTREAM DATA without DLM
+        "name": "dd-instream1"
+        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +\\*"
+        ,"whileRegex": "^[^\\/][^\\*\\/]"
+        ,"foldEOF": true
+        }
+        ,{// DD INSTREAM DATA with DLM
+        "name": "dd2"
+        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +DATA,DLM=(.{2,8})(?: |,|$)"
+        ,"endRegex": "^\\1"
+        ,"nested": false
+        }
+        ,{// DD FILE
+        "name": "dd-file"
+        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +\\S+,(?: |$)"
+        ,"endRegex": "^\\/\\/ +\\S+[^,](?: |$)"
+        }
+        ]
+    }
+    ]
+    }
+  ]
+  }
+]
+	},
+	// }}}
+
+	// {{{ Language: JSON
+	"[json]": {
+		"editor.foldingStrategy": "indentation",
+		"explicitFolding.autoFold": "none",
+	},
+	// }}}
+
+	// {{{ Language: JSON with Comments
+	"[jsonc]": {
+		"explicitFolding.autoFold": "none",
+		// "explicitFolding.debug": true,
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "\\/\\/",
+		// 		"endRegex": "^\\s*$",
+		// 		"bypassProtection": true
+		// 	}
+		// ]
+	},
+	// }}}
+
+	// {{{ Language: kaoscript
+	"[kaoscript]": {
+		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?"
+	},
+	// }}}
+
+	// {{{ Language: Lisp
+	"[lisp]": {
+		"editor.foldingStrategy": "indentation",
+	},
+	// }}}
+
+	// {{{ Language: Log
+	"[log]": {
+		"explicitFolding.rules": [
+			{
+				"separator": "process"
+			},
+		],
+	},
+	// }}}
+
+	// {{{ Language: PHP
+	"[php]": {
+		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+		// "explicitFolding.debug": true,
+		"explicitFolding.rules": [
+			{
+				"begin": "/*",
+				"end": "*/",
+				"nested": false
+			},
+			{
+				"begin": "\"",
+				"end": "\"",
+				"nested": false
+			},
+			{
+				"beginRegex": "(?<!\\w)'",
+				"endRegex": "'",
+				"nested": false
+			},
+			{
+				"beginRegex": "(?:case|default)[^:]*:",
+				"endRegex": "break;|(.)(?=case|default|\\})",
+				"foldLastLine": [true, false]
+			},
+			{
+				"beginRegex": "{",
+				"middleRegex": "}[^}]+{",
+				"endRegex": "}\\s*(else|if)?",
+				"foldLastLine": [true, false]
+			},
+			{
+				"beginRegex": "if\\s*\\(.+\\)\\s*[^\\{]?",
+				"middleRegex": "else(?:\\s*if\\s*\\(.+\\)\\s*[^\\{]?)?",
+				"endRegex": ";"
+			},
+			{
+				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z]+)[^>]*[^>\\/]*>",
+				"endRegex": "<\\/\\1>"
+			},
+			{
+				"beginRegex": "<\\?(?:\\=|php)",
+				"endRegex": "\\?>"
+			},
+			{
+				"begin": "[",
+				"end": "]"
+			},
+			{
+				"begin": "(",
+				"end": ")"
+			}
+		]
+	},
+	// }}}
+
+	// {{{ Language: Python
+	"[python]": {
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "\"\"\"",
+		// 		"endRegex": "\"\"\"",
+		// 	},
+		// 	{
+		// 		"separatorRegex": "#\\s*%%"
+		// 	},
+		// 	{
+		// 		"begin": "(",
+		// 		"end": ")",
+		// 	},
+		// 	{
+		// 		"indentation": true,
+		// 		"offSide": true
+		// 	}
+		// ]
+	},
+	// }}}
+
+	// {{{ Language: SASS
+	"[scss]": {
+		// "editor.wordSeparators": "`!%^&*()=+[{]}\\|;:'\",<>?"
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": " \\{\\s*$",
+		// 		"endRegex": "^\\s*\\}"
+		// 	},
+		// ]
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"begin": "|>",
+		// 		"end": "<|"
+		// 	},
+		// 	{
+		// 		"begin": "region",
+		// 		"end": "endregion"
+		// 	}
+		// ],
+		// "explicitFolding.debug": true
+	},
+	// }}}
+
+	// {{{ Language: typescript
+	"[typescript]": {
+		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?"
+	},
+	// }}}
+
+	// {{{ Language: XML
+	"[xml]": {
+		"editor.foldingStrategy": "indentation"
+	},
+	// }}}
+
 }
