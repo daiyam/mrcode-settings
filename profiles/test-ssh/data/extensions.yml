@@ -1,5 +1,7 @@
 disabled: []
 enabled:
+  - id: acherkashin.virtualbox-extension
+    uuid: 270a84ac-796b-43ee-889a-184df0c325f8
   - id: adam-bender.commit-message-editor
     uuid: b9883563-e6ba-4f6c-b03c-193c80e79c75
   - id: AlanWalk.markdown-navigation
@@ -24,12 +26,18 @@ enabled:
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
   - id: eg2.vscode-npm-script
     uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
+  - id: fabianlauer.vs-code-xml-format
+    uuid: 7752d5d1-7dab-46f8-bc86-ffca8c2d33e7
   - id: fabiospampinato.vscode-projects-plus
     uuid: e442b777-54e3-4192-a795-5e201b12f788
+  - id: Gruntfuggly.todo-tree
+    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
   - id: hbenl.vscode-mocha-test-adapter
     uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
   - id: hbenl.vscode-test-explorer
     uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
+  - id: hilleer.yaml-plus-json
+    uuid: a5c960d9-3d35-4b3f-9d53-bafe782ddf1a
   - id: icai.rem-rpx
     uuid: e7ca8626-dd63-44ac-8fda-bffb14f8e9b3
   - id: jack89ita.copy-filename
@@ -60,8 +68,12 @@ enabled:
     uuid: 73b80ea3-7f20-4eb7-ab8c-e70ac36224df
   - id: ryu1kn.remote-repo-viewer
     uuid: df972d01-91e4-4902-8227-9f36e4bd8700
+  - id: samverschueren.linter-xo
+    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: SimonSiefke.svg-preview
     uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
+  - id: spmeesseman.vscode-taskexplorer
+    uuid: afc7b7f6-486c-4560-94cb-6130ea88cdb8
   - id: stubailo.ignore-gitignore
     uuid: c8161b58-83c2-47a1-8223-137f314e3b3f
   - id: svipas.control-snippets
@@ -72,5 +84,9 @@ enabled:
     uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
   - id: uyiosa-enabulele.reopenclosedtab
     uuid: f046b1cf-eb92-47d6-98f5-93e9529368c2
+  - id: vscode-icons-team.vscode-icons
+    uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
+  - id: zokugun.zokugun-theme
+    uuid: 93474243-9833-480b-ab2d-637000ce973d

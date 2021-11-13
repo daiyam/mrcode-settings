@@ -2,5 +2,7 @@
     "remote.SSH.remotePlatform": {
         "arch": "linux"
     },
-    "update.mode": "none"
+    "update.mode": "none",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Zokugun Obsidium"
 }
