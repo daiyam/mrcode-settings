@@ -60,6 +60,8 @@ enabled:
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
   - id: alexeyvax.vscode-open-native-terminal
     uuid: 92e9b671-0527-47a2-9e4a-4b414a8b326c
+  - id: ArturoDent.custom-language-syntax
+    uuid: 970098e6-fbf4-4b98-8530-995eb86b34f3
   - id: bierner.markdown-mermaid
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
   - id: bierner.markdown-preview-github-styles
@@ -135,4 +137,4 @@ enabled:
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
   - id: zokugun.zokugun-theme
-    uuid: null
+    uuid: 93474243-9833-480b-ab2d-637000ce973d

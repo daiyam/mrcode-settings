@@ -252,6 +252,12 @@
 	],
 	// }}}
 
+	// {{{ Extension: Custom Language Properties
+	"custom-language-properties": {
+  		"makefile.comments.lineComment": "@#",
+	},
+	// }}}
+
 	// {{{ Extension: Explicit Folding
 	"explicitFolding.rules": {
 		"*": {
@@ -790,6 +796,12 @@
 	},
 	// }}}
 
+	// {{{ Language: Makefile
+	"[makefile]": {
+		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",<>/?",
+	},
+	// }}}
+
 	// {{{ Language: PHP
 	"[php]": {
 		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
@@ -902,5 +914,5 @@
 		"editor.foldingStrategy": "indentation"
 	},
 	// }}}
-
+	
 }
