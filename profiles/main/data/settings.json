@@ -300,6 +300,10 @@
 	"google-translate.serverDomain": "https://translate.google.com",
 	// }}}
 
+	// {{{ Extension: Markdown Preview Github Styling
+	"markdown-preview-github-styles.colorTheme": "light",
+	// }}}
+
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
 	// }}}
