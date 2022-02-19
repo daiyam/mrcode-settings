@@ -92,7 +92,7 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
-	"workbench.settings.useSplitJSON": true,
+	// "workbench.settings.useSplitJSON": true,
 	// }}}
 
 	// {{{ Files
@@ -567,6 +567,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 
 	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 		// "explicitFolding.debug": true,
 		// "explicitFolding.rules": [
 		// 	{
@@ -800,6 +801,36 @@
 	},
 	// }}}
 
+	// {{{ Language: Lua
+	"[lua]": {
+		// "explicitFolding.debug": true,
+		"explicitFolding.rules": [
+			{
+				"begin": "--[[",
+				"end": "--]]",
+				"nested": false,
+				"kind": "comment",
+			},
+			{
+				"begin": "--",
+				"continuation": "\\",
+				"nested": false,
+				"kind": "comment",
+			},
+			{
+				"begin": "\"",
+				"end": "\"",
+				"nested": false,
+			},
+			{
+				"beginRegex": "\\b(?:for|function|if)\\b",
+				"middleRegex": "\\belse(?:if)?\\b",
+				"endRegex": "\\bend\\b",
+			},
+		],
+	},
+	// }}}
+
 	// {{{ Language: Makefile
 	"[makefile]": {
 		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",<>/?",
@@ -919,4 +950,5 @@
 	},
 	// }}}
 	
+	"diffEditor.ignoreTrimWhitespace": false,
 }
