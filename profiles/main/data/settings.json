@@ -125,6 +125,10 @@
 	// {{{ CodeLens
 	"debug.javascript.codelens.npmScripts": "never",
 	// }}}
+	
+	// {{{ DiffEditor
+	"diffEditor.ignoreTrimWhitespace": false,
+	// }}}
 
 	"git.confirmSync": false,
 
@@ -950,5 +954,4 @@
 	},
 	// }}}
 	
-	"diffEditor.ignoreTrimWhitespace": false,
 }
