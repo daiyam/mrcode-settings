@@ -1,12 +1,20 @@
 disabled:
+  - id: alefragnani.Bookmarks
+    uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
+  - id: alexeyvax.vscode-open-native-terminal
+    uuid: 92e9b671-0527-47a2-9e4a-4b414a8b326c
   - id: bungcip.better-toml
     uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: connorshea.vscode-test-explorer-status-bar
     uuid: 4bbfd0d5-c934-445f-ab56-1b2167378db2
   - id: dnicolson.binary-plist
     uuid: 7b530645-4f49-4222-a851-c18d854275fb
+  - id: Gruntfuggly.todo-tree
+    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
   - id: IBM.zopeneditor
     uuid: 8e33f644-2820-4b50-943f-91cfb3054d24
+  - id: j4ng5y.charactercount
+    uuid: b78f4a91-df9d-44b3-ac9c-372c02a88d39
   - id: JakeBecker.elixir-ls
     uuid: bc64531a-9b98-46f5-8ef9-88334d02cd60
   - id: jebbs.plantuml
@@ -37,6 +45,8 @@ disabled:
     uuid: 95dcafc3-2012-45bf-aac1-0b5345e0daf1
   - id: sysoev.language-stylus
     uuid: 93ecc089-f396-47b4-8676-7fa3bc156a2c
+  - id: TakumiI.markdowntable
+    uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
   - id: tomoki1207.vscode-input-sequence
     uuid: 5d5e0952-6ea3-4aa1-adf9-81607539d6f0
   - id: torn4dom4n.latex-support
@@ -56,10 +66,6 @@ enabled:
     uuid: b9883563-e6ba-4f6c-b03c-193c80e79c75
   - id: AlanWalk.markdown-navigation
     uuid: 8c8e7dfa-5c36-432a-8a14-d2946d91a5d2
-  - id: alefragnani.Bookmarks
-    uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
-  - id: alexeyvax.vscode-open-native-terminal
-    uuid: 92e9b671-0527-47a2-9e4a-4b414a8b326c
   - id: ArturoDent.custom-language-syntax
     uuid: 970098e6-fbf4-4b98-8530-995eb86b34f3
   - id: bierner.markdown-mermaid
@@ -82,12 +88,12 @@ enabled:
     uuid: 7752d5d1-7dab-46f8-bc86-ffca8c2d33e7
   - id: fabiospampinato.vscode-projects-plus
     uuid: e442b777-54e3-4192-a795-5e201b12f788
-  - id: Gruntfuggly.todo-tree
-    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
   - id: hbenl.vscode-mocha-test-adapter
     uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
   - id: hbenl.vscode-test-explorer
     uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
+  - id: herrmannplatz.npm-dependency-links
+    uuid: 1b0d4512-2735-4323-ae6b-30c0f58cdbb0
   - id: hilleer.yaml-plus-json
     uuid: a5c960d9-3d35-4b3f-9d53-bafe782ddf1a
   - id: icai.rem-rpx
@@ -126,8 +132,6 @@ enabled:
     uuid: c8161b58-83c2-47a1-8223-137f314e3b3f
   - id: svipas.control-snippets
     uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
-  - id: TakumiI.markdowntable
-    uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
   - id: techer.open-in-browser
     uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
   - id: uyiosa-enabulele.reopenclosedtab

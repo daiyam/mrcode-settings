@@ -61,6 +61,9 @@
 	// {{{ Terminal
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	// #enable(editor="mrcode")
+	// "terminal.integrated.enableWordLinks": false,
 	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
 	"terminal.integrated.fontWeight": "400",
 	"terminal.integrated.fontSize": 13,
@@ -68,6 +71,7 @@
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.tabs.hideCondition": "never",
+	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
 	// }}}
 	
 	// {{{ Update
@@ -112,7 +116,10 @@
 		"*.HLASM*": "hlasm",
 		"*.HLA*": "hlasm",
 		"*.ksb": "javascript",
-		"*.ksm": "json",
+		"*.kse": "json",
+		"*.ksh": "json",
+		"*.ksr": "json",
+		"*.mdx": "markdown",
 		"tslint.json": "jsonc",
 		"cglicenses.json": "jsonc",
 		".all-contributorsrc": "json",
@@ -270,7 +277,7 @@
 		},
 	},
 	"explicitFolding.additionalSchemes": [
-		"gitlens"
+		"gitlens",
 	],
 	// #if(editor="mrcode")
 	// "explicitFolding.delay": 0,
@@ -387,6 +394,17 @@
 	// {{{ Extension: vscode-icons
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
+	// #rewrite-next-line
+	// "vsicons.customIconFolderPath": "${editorStorage}",
+	"vsicons.customIconFolderPath": "/Users/baptiste/.mrcode",
+	"vsicons.associations.files": [
+		{
+			"icon": "koascript_light", "extensions": ["ks"], "format": "svg", "light": true
+		},
+		{
+			"icon": "koascript_dark", "extensions": ["ks"], "format": "svg", "light": false
+		},
+	],
 	// }}}
 		
 	// {{{ Extension: YAML
@@ -765,6 +783,8 @@
 	// {{{ Language: JSON
 	"[json]": {
 		"editor.foldingStrategy": "indentation",
+		"editor.formatOnSave": true,
+		
 		"explicitFolding.autoFold": "none",
 	},
 	// }}}
