@@ -349,6 +349,9 @@
 	"syncSettings.ignoredSettings": [
 		"json.schemas"
 	],
+	"syncSettings.additionalFiles": [
+		"~editorStorage/vsicons-custom-icons"
+	],
 	
 	// -- tests
 	// "syncSettings.ignoredExtensions": [
@@ -395,8 +398,7 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
 	// #rewrite-next-line
-	// "vsicons.customIconFolderPath": "${editorStorage}",
-	"vsicons.customIconFolderPath": "/Users/baptiste/.mrcode",
+	// "vsicons.customIconFolderPath": "#{editorStorage}",
 	"vsicons.associations.files": [
 		{
 			"icon": "koascript_light", "extensions": ["ks"], "format": "svg", "light": true
