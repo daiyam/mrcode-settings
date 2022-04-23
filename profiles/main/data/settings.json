@@ -69,6 +69,7 @@
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.lineHeight": 1.2,
 	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.minimumContrastRatio": 1,
 	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.tabs.hideCondition": "never",
 	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
