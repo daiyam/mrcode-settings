@@ -1,4 +1,8 @@
-disabled: []
+disabled:
+  - id: ArturoDent.custom-language-syntax
+    uuid: 970098e6-fbf4-4b98-8530-995eb86b34f3
+  - id: svipas.control-snippets
+    uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
 enabled:
   - id: ms-vscode-remote.remote-ssh
     uuid: 607fd052-be03-4363-b657-2bd62b83d28a
