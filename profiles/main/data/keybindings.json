@@ -181,5 +181,9 @@
         "key": "cmd+k cmd+u",
         "command": "-editor.action.removeCommentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+e cmd+e",
+        "command": "extension.intellijRecentFiles"
     }
 ]

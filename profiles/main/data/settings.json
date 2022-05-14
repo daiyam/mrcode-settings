@@ -161,6 +161,15 @@
 	"commit-message-editor.view.defaultView": "form",
 	"commit-message-editor.view.saveAndClose": true,
 	"commit-message-editor.view.useTabs": true,
+	// "commit-message-editor.dynamicTemplate": [
+	// 	"{type}{scope}: {description}",
+	// 	"",
+	// 	"{body}",
+	// 	"",
+	// 	"{breaking_change}{footer}",
+	// 	"Resolves: {resolves}",
+	// 	"See also: {references}",
+	// ],
 	"commit-message-editor.tokens": [
 		{
 			"name": "type",
@@ -260,7 +269,21 @@
 			"description": "Optional footer",
 			"type": "text",
 			"multiline": true
-		}
+		},
+		{
+			"label": "Resolves",
+			"name": "resolves",
+			"description": "",
+			"type": "text",
+			"multiline": false
+		},
+		{
+			"label": "See also",
+			"name": "references",
+			"description": "",
+			"type": "text",
+			"multiline": false
+		},
 	],
 	// }}}
 
