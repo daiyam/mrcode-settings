@@ -35,6 +35,8 @@ disabled:
     uuid: 95dcafc3-2012-45bf-aac1-0b5345e0daf1
   - id: sysoev.language-stylus
     uuid: 93ecc089-f396-47b4-8676-7fa3bc156a2c
+  - id: techer.open-in-browser
+    uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
   - id: tomoki1207.vscode-input-sequence
     uuid: 5d5e0952-6ea3-4aa1-adf9-81607539d6f0
   - id: Yummygum.city-lights-icon-vsc
@@ -120,8 +122,6 @@ enabled:
     uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
   - id: TakumiI.markdowntable
     uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
-  - id: techer.open-in-browser
-    uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
   - id: uyiosa-enabulele.reopenclosedtab
     uuid: f046b1cf-eb92-47d6-98f5-93e9529368c2
   - id: vscode-icons-team.vscode-icons
