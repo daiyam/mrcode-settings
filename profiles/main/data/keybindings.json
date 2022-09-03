@@ -185,5 +185,10 @@
     {
         "key": "cmd+e cmd+e",
         "command": "extension.intellijRecentFiles"
+    },
+    {
+        "key": "shift+cmd+e shift+cmd+r",
+        "command": "batchRename.rename",
+        "when": "filesExplorerFocus && !explorerResourceIsFolder"
     }
 ]

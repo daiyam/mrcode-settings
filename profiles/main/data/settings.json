@@ -172,6 +172,9 @@
 	// 	"{breaking_change}{footer}",
 	// 	"Resolves: {resolves}",
 	// 	"See also: {references}",
+	//	""
+	//	""
+	//  "skip-checks: true"
 	// ],
 	"commit-message-editor.tokens": [
 		{
@@ -357,7 +360,6 @@
 	// 	"editorconfig.editorconfig",
 	// 	"jhartell.vscode-line-endings",
 	// 	"paragdiwan.gitpatch",
-	// 	"redvanworkshop.explorer-exclude-vscode-extension",
 	// 	"zokugun.explicit-folding",
 	// 	"zokugun.zokugun-theme"
 	// ],
@@ -471,50 +473,9 @@
 	},
 	// }}}
 
-	// {{{ Language: Cobol
-	"[cobol]": {
-		"explicitFolding.debug": true,
-		// "explicitFolding.rules": [
-		// 	// Bloc commentaires
-		// 	{
-		// 		"beginRegex": "(?<=^.{6})\\*",
-		// 		"endRegex": "(?<=^.{6})[^*]",
-		// 		"nested": false,
-		// 		"foldLastLine": false,
-		// 		"kind": "comment"
-		// 	},
-		// 	// Division
-		// 	{
-		// 		"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?=\\s+(?i:DIVISION))",
-		// 		"strict": false,
-		// 		"nested": [
-		// 			// Section
-		// 			{
-		// 				"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?=\\s+(?i:SECTION))",
-		// 				"strict": false,
-		// 				"nested": [
-		// 					// Paragraph
-		// 					{
-		// 						"separatorRegex": "(?<=^.{6}\\s{1,4})[A-Za-z0-9\\-_:]+(?!\\s+(?i:SECTION|DIVISION))",
-		// 						"strict": false,
-		// 						"nested": [
-		// 							// Page eject
-		// 							{
-		// 								"separatorRegex": "(?<=^.{6})\\/"
-		// 							}
-		// 						]
-		// 					}
-		// 				]
-		// 			}
-		// 		]
-		// 	}
-		// ]
-	},
-	// }}}
-
 	// {{{ Language: C++
 	"[cpp]": {
-		"explicitFolding.debug": true,
+		// "explicitFolding.debug": true,
 		"explicitFolding.rules": [
 			// {
 			// 	"beginRegex": "#if(?:n?def)?",
@@ -585,7 +546,6 @@
 
 	// {{{ Language: Elixir
 	"[elixir]": {
-		// "editor.foldingStrategy": "explicit & indentation",
 		"explicitFolding.rules": [
 			{
 				"beginRegex": "#\\s*region\\b",
@@ -603,12 +563,12 @@
 
 	"[html]": {
 		// "explicitFolding.debug": true,
-		// "explicitFolding.rules": [
-		// 	{
-		// 		"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
-		// 		"endRegex": "<\\/\\1>"
-		// 	},
-		// ]
+		"explicitFolding.rules": [
+			{
+				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
+				"endRegex": "<\\/\\1>"
+			},
+		]
 	},
 	// }}}
 
@@ -622,190 +582,11 @@
 		// "explicitFolding.debug": true,
 		// "explicitFolding.rules": [
 		// 	{
-		// 		"begin": "{",
-		// 		"end": "}",
-		// 	},
-		// 	{
-		// 		"indentation": true,
-		// 		"offSide": true,
-		// 	},
-		// ]
-		// "explicitFolding.rules":[
-		// 	{
-		// 		"beginRegex": "(?:\\/\\/{|\\/\\*{)",
-		// 		"endRegex": "(?:\\/\\/}|\\/\\*})"
-		// 	}
-		// ]
-		// "explicitFolding.rules": [
-		// 	{
 		// 		"beginRegex": "^import\\b",
 		// 		"whileRegex": "^(?:import\\b|\\/\\/)",
 		// 		"autoFold": true
 		// 	}
 		// ],
-		// "explicitFolding.autoFold": "none",
-	},
-	// }}}
-
-	// {{{ Language: JCL
-	"[jcl]": {
-		"explicitFolding.autoFold": "none",
-		"explicitFolding.debug": true,
-		"explicitFolding.rules": [
-			// { // Bloc commentaires
-			// 	"kind": "comment",
-			// 	"whileRegex": "^\\/\\/\\*"
-			// },
-			// { // JOB
-			// 	"separatorRegex": "^\\/\\/[^*]\\S* +JOB ",
-			// 	"strict": "never",
-			// 	"nested": [
-			// 		{ // PROC - PEND
-			// 			"name": "proc",
-			// 			"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
-			// 			"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
-			// 			"nested": [
-			// 				{ // EXEC
-			// 					"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
-			// 					"nested": [
-			// 						{ // DD
-			// 							"separatorRegex": "^\\/\\/[^*]\\S* +DD ",
-			// 						}
-			// 					]
-			// 				}
-			// 			]
-			// 		}
-			// 	]
-			// }
-			// { // JOB
-			// 	"name": "job",
-			// 	"separatorRegex": "^\\/\\/[^*]\\S* +JOB(?: |$)",
-			// 	"strict": "never",
-			// 	"nested": [
-			// 		{ // PROC - PEND
-			// 			"name": "proc",
-			// 			"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
-			// 			"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
-			// 			"strict": "never",
-			// 			"nested": [
-			// 				{ // EXEC
-			// 					"name": "exec",
-			// 					"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
-			// 					"strict": "never",
-			// 					"nested": [
-			// 						{
-			// 							"name": "dd",
-			// 							"beginRegex": "^\\/\\/[^*]\\S* +DD .*,$",
-			// 							"endRegex": "^\\/\\/(?!(?:\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$)))"
-			// 						},
-			// 						{ // Bloc commentaires
-			// 							"whileRegex": "^\\/\\/\\*",
-			// 							"kind": "comment"
-			// 						},
-			// 					]
-			// 				}
-			// 			]
-			// 		}
-			// 	]
-			// }
-		//	{// Bloc commentaires
-		//	 //"name": "comment",
-		//	 //"beginRegex": "^\\/\\/\\*",
-		//	 //"whileRegex": "^\\/\\/\\*",
-		//	 //"foldLastLine": true,
-		//	 //"nested": false,
-		//	 //"kind": "comment"
-
-		//		"name": "comment"
-		//	 ,"beginRegex": "^\\/\\/\\*"
-		//	 ,"endRegex": "^\\/\\/[^*]"
-		//	 ,"nested": false
-		//	 ,"consumeEnd": false
-		//	 ,"kind": "comment"
-
-		//	},
-		//	{// DD
-		//	 "name": "dd",
-		//	 //"separatorRegex": "^\\/\\/[^*]\\S* +DD "
-		//	 "beginRegex": "^\\/\\/[^*]\\S* +DD ",
-		//	 "continuationRegex": "^\\/\\/(\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$))",
-		//	 "nested": true
-		//	},
-
-		//	{// JOB
-		//	 "name": "job",
-		//	 "separatorRegex": "^\\/\\/[^*]\\S* +JOB(?: |$)",
-		//	 "strict": "never",
-		//	 "nested": [
-		//		{// PROC - PEND
-		//		 "name": "proc",
-		//		 "beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)",
-		//		 "endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)",
-		//		 "foldLastLine": true,
-		//		 "strict": "never",
-		//		 "nested": [
-		//			 {// EXEC
-		//				"name": "exec",
-		//				"separatorRegex": "^\\/\\/[^*]\\S* +EXEC ",
-		//				"strict": "never",
-		//				"nested": true
-		//				//"nested": [
-		//				//	 {// DD
-		//				//	"name": "dd",
-		//				//	//"separatorRegex": "^\\/\\/[^*]\\S* +DD "
-		//				//	"beginRegex": "^\\/\\/[^*]\\S* +DD ",
-		//				//	"continuationRegex": "^\\/\\/(\\*|\\S* +DD \\S+,(?: |$)| +\\S+,(?: |$))"
-		//				//	 }
-		//				// ]
-		//			 }
-		//			 ]
-		//		 }
-		//		 ]
-		//	 }
- // Hiérarchie JCL
-{// JOB
-   "name": "job"
-  ,"separatorRegex": "^\\/\\/[^*]\\S* +JOB(?:( |$))"
-  ,"strict": "never"
-  ,"nested": [
-    {// PROC - PEND
-    "name": "proc"
-    ,"beginRegex": "^\\/\\/[^*]\\S* +PROC(?: |$)"
-    ,"endRegex": "^\\/\\/[^*]\\S* +PEND(?: |$)"
-    ,"nested": [
-        {// STEP
-        "name": "exec"
-        ,"separatorRegex": "^\\/\\/[^*]\\S* +EXEC "
-        ,"nested": [
-        {// Bloc commentaires
-        "name": "comment"
-        ,"whileRegex": "^\\/\\/\\*"
-        ,"kind": "comment"
-        }
-        ,{// DD INSTREAM DATA without DLM
-        "name": "dd-instream1"
-        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +\\*"
-        ,"whileRegex": "^[^\\/][^\\*\\/]"
-        ,"foldEOF": true
-        }
-        ,{// DD INSTREAM DATA with DLM
-        "name": "dd2"
-        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +DATA,DLM=(.{2,8})(?: |,|$)"
-        ,"endRegex": "^\\1"
-        ,"nested": false
-        }
-        ,{// DD FILE
-        "name": "dd-file"
-        ,"beginRegex": "^\\/\\/[^*]\\S* +DD +\\S+,(?: |$)"
-        ,"endRegex": "^\\/\\/ +\\S+[^,](?: |$)"
-        }
-        ]
-    }
-    ]
-    }
-  ]
-  }
-]
 	},
 	// }}}
 
@@ -813,7 +594,6 @@
 	"[json]": {
 		"editor.foldingStrategy": "indentation",
 		"editor.formatOnSave": true,
-		
 		"explicitFolding.autoFold": "none",
 	},
 	// }}}
@@ -846,6 +626,7 @@
 
 	// {{{ Language: Log
 	"[log]": {
+		// "explicitFolding.debug": true,
 		"explicitFolding.rules": [
 			{
 				"separator": "process"
@@ -886,7 +667,7 @@
 
 	// {{{ Language: Makefile
 	"[makefile]": {
-		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",<>/?",
+		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|;'\",<>/?",
 	},
 	// }}}
 
@@ -942,52 +723,46 @@
 				"begin": "(",
 				"end": ")"
 			}
-		]
+		],
+		"explicitFolding.perFiles": {
+			"*.special.js": [
+			]
+		},
 	},
 	// }}}
 
 	// {{{ Language: Python
 	"[python]": {
-		// "explicitFolding.rules": [
-		// 	{
-		// 		"beginRegex": "\"\"\"",
-		// 		"endRegex": "\"\"\"",
-		// 	},
-		// 	{
-		// 		"separatorRegex": "#\\s*%%"
-		// 	},
-		// 	{
-		// 		"begin": "(",
-		// 		"end": ")",
-		// 	},
-		// 	{
-		// 		"indentation": true,
-		// 		"offSide": true
-		// 	}
-		// ]
+		"explicitFolding.rules": [
+			{
+				"beginRegex": "\"\"\"",
+				"endRegex": "\"\"\"",
+			},
+			{
+				"separatorRegex": "#\\s*%%"
+			},
+			{
+				"begin": "(",
+				"end": ")",
+			},
+			{
+				"indentation": true,
+				"offSide": true
+			}
+		]
 	},
 	// }}}
 
 	// {{{ Language: SASS
 	"[scss]": {
-		// "editor.wordSeparators": "`!%^&*()=+[{]}\\|;:'\",<>?"
+		// "editor.wordSeparators": "`!%^&*()=+[{]}\\|;:'\",<>?",
+		// "explicitFolding.debug": true,
 		// "explicitFolding.rules": [
 		// 	{
 		// 		"beginRegex": " \\{\\s*$",
 		// 		"endRegex": "^\\s*\\}"
 		// 	},
-		// ]
-		// "explicitFolding.rules": [
-		// 	{
-		// 		"begin": "|>",
-		// 		"end": "<|"
-		// 	},
-		// 	{
-		// 		"begin": "region",
-		// 		"end": "endregion"
-		// 	}
 		// ],
-		// "explicitFolding.debug": true
 	},
 	// }}}
 
@@ -1003,4 +778,5 @@
 	},
 	// }}}
 	
+
 }

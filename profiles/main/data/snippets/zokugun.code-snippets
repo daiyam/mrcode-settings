@@ -16,16 +16,19 @@
 	// 	"description": "Log output to console"
 	// }
 	"folding-begin": {
+		"scope": "javascript,typescript",
 		"prefix": "fb",
 		"body": [
 			" // {{{"
 		]
 	},
 	"folding-end": {
+		"scope": "javascript,typescript",
 		"prefix": "fe",
 		"body": " // }}}"
 	},
 	"target-ecma-v5": {
+		"scope": "kaoscript",
 		"prefix": "tg5",
 		"body": "#![target(ecma-v5)]"
 	},
