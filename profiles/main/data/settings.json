@@ -22,7 +22,6 @@
 	"editor.hover.delay": 1000,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
-	"editor.renderWhitespace": "none",
 	"editor.occurrencesHighlight": false,
 	"editor.quickSuggestions": {
 		"other": false,
@@ -30,6 +29,13 @@
 		"strings": false
 	},
 	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "none",
+	"editor.rulers": [
+		{
+			"column": 140,
+			"color": "#282a2e"
+		},
+	],
 	"editor.selectionHighlight": false,
 	"editor.showFoldingControls": "always",
 	"editor.trimAutoWhitespace": false,
@@ -667,7 +673,7 @@
 
 	// {{{ Language: Makefile
 	"[makefile]": {
-		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|;'\",<>/?",
+		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|'\",<>/?",
 	},
 	// }}}
 

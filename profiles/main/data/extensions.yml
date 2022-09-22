@@ -39,6 +39,8 @@ disabled:
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: samverschueren.linter-xo
     uuid: fc140617-fb59-426a-87d2-e810904d10cf
+  - id: sandipchitale.vscode-fspath-desktop-integration
+    uuid: 649d19d0-8fd8-4953-87d8-b8e76255987d
   - id: silvenon.mdx
     uuid: ef2a5b38-02c4-4193-8561-1f072c209474
   - id: slevesque.vscode-hexdump
