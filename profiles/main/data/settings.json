@@ -1,5 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
+	// {{{ CodeLens
+	"debug.javascript.codelens.npmScripts": "never",
+	// }}}
+
+	// {{{ DiffEditor
+	"diffEditor.ignoreTrimWhitespace": false,
+	// }}}
+
 	// {{{ Editor
 	"editor.autoIndent": "keep",
 	"editor.bracketPairColorization.enabled": false,
@@ -53,62 +61,6 @@
 	"problems.decorations.enabled": false,
 	// }}}
 
-	// {{{ Search
-	"search.showLineNumbers": true,
-	// }}}
-
-	// {{{ Security
-	"security.workspace.trust.enabled": false,
-	// }}}
-
-	// {{{ Telemetry
-	"telemetry.enableCrashReporter": false,
-	"telemetry.enableTelemetry": false,
-	"telemetry.telemetryLevel": "off",
-	// }}}
-
-	// {{{ Terminal
-	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.drawBoldTextInBrightColors": false,
-	"terminal.integrated.enableMultiLinePasteWarning": false,
-	// #enable(editor="mrcode")
-	// "terminal.integrated.enableWordLinks": false,
-	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-	"terminal.integrated.fontWeight": "400",
-	"terminal.integrated.fontSize": 13,
-	"terminal.integrated.lineHeight": 1.2,
-	"terminal.integrated.letterSpacing": 1,
-	"terminal.integrated.minimumContrastRatio": 1,
-	"terminal.integrated.scrollback": 10000,
-	"terminal.integrated.tabs.hideCondition": "never",
-	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
-	// }}}
-	
-	// {{{ Update
-	// #enable(editor!="mrcode")
-	// "update.mode": "manual",
-	// }}}
-
-	// {{{ Window
-	"window.newWindowDimensions": "maximized",
-	"window.restoreFullscreen": true,
-	"window.restoreWindows": "all",
-	"window.title": "${activeEditorLong}",
-	// }}}
-
-	// {{{ Workbench
-	"workbench.colorTheme": "Zokugun Obsidium",
-	"workbench.enableExperiments": false,
-	// #enable(editor="mrcode")
-	// "workbench.editor.openPositioning": "sort",
-	"workbench.editor.decorations.colors": false,
-	"workbench.editor.decorations.badges": false,
-	"workbench.iconTheme": "vscode-icons",
-	"workbench.settings.editor": "json",
-	"workbench.settings.enableNaturalLanguageSearch": false,
-	// "workbench.settings.useSplitJSON": true,
-	// }}}
-
 	// {{{ Files
 	"files.associations": {
 		"*.COBOL*": "cobol",
@@ -139,18 +91,91 @@
 	"files.eol": "\n",
 	// }}}
 
-	// {{{ CodeLens
-	"debug.javascript.codelens.npmScripts": "never",
-	// }}}
-	
-	// {{{ DiffEditor
-	"diffEditor.ignoreTrimWhitespace": false,
-	// }}}
-
+	// {{{ Git
 	"git.confirmSync": false,
+	// }}}
 
+	// {{{ Keyboard
 	// #enable(editor="mrcode", os="linux")
 	// "keyboard.platform": "mac",
+	// }}}
+
+	// {{{ Remote
+	"remote.extensionKind": {
+		"eamodio.gitlens": [
+			"workspace",
+			"ui",
+		],
+		"editorconfig.editorconfig": [
+			"ui",
+			"workspace",
+		],
+		"jeff-hykin.code-eol": [
+			"ui",
+		],
+	},
+	"remote.SSH.remotePlatform": {
+		"arch": "linux"
+	},
+	"remote.SSH.defaultExtensions": [
+	],
+	// }}}
+
+	// {{{ Search
+	"search.showLineNumbers": true,
+	// }}}
+
+	// {{{ Security
+	"security.workspace.trust.enabled": false,
+	// }}}
+
+	// {{{ Telemetry
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"telemetry.telemetryLevel": "off",
+	// }}}
+
+	// {{{ Terminal
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	// #enable(editor="mrcode")
+	// "terminal.integrated.enableWordLinks": false,
+	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.lineHeight": 1.2,
+	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.minimumContrastRatio": 1,
+	"terminal.integrated.scrollback": 10000,
+	"terminal.integrated.tabs.hideCondition": "never",
+	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
+	// }}}
+
+	// {{{ Update
+	// #enable(editor!="mrcode")
+	// "update.mode": "manual",
+	// }}}
+
+	// {{{ Window
+	"window.newWindowDimensions": "maximized",
+	"window.restoreFullscreen": true,
+	"window.restoreWindows": "all",
+	"window.title": "${activeEditorLong}",
+	// }}}
+
+	// {{{ Workbench
+	"workbench.colorTheme": "Zokugun Obsidium",
+	"workbench.enableExperiments": false,
+	// #enable(editor="mrcode")
+	// "workbench.editor.openPositioning": "sort",
+	"workbench.editor.decorations.colors": false,
+	"workbench.editor.decorations.badges": false,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.settings.editor": "json",
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	// "workbench.settings.useSplitJSON": true,
+	// }}}
 
 	// Extensions
 	"extensions.ignoreRecommendations": true,
@@ -353,23 +378,6 @@
 
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
-	// }}}
-
-	// {{{ Extension: RemoteSSH
-	// #if(editor="visual studio code")
-	// "remote.SSH.remotePlatform": {
-	// 	"arch": "linux"
-	// },
-	// "remote.SSH.defaultExtensions": [
-	// 	"chrisdias.vscode-opennewinstance",
-	// 	"eamodio.gitlens",
-	// 	"editorconfig.editorconfig",
-	// 	"jhartell.vscode-line-endings",
-	// 	"paragdiwan.gitpatch",
-	// 	"zokugun.explicit-folding",
-	// 	"zokugun.zokugun-theme"
-	// ],
-	// #endif
 	// }}}
 
 	// {{{ Extension: SVG Preview
@@ -783,6 +791,6 @@
 		"editor.foldingStrategy": "indentation"
 	},
 	// }}}
-	
+
 
 }
