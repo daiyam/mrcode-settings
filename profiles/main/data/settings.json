@@ -3,7 +3,7 @@
 	// {{{ CodeLens
 	"debug.javascript.codelens.npmScripts": "never",
 	// }}}
-
+	
 	// {{{ DiffEditor
 	"diffEditor.ignoreTrimWhitespace": false,
 	// }}}
@@ -17,6 +17,7 @@
 	// "editor.showFoldingLastLine": false,
 	// #else
 	// "editor.foldingStrategy": "auto",
+	// "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
 	// #endif
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
@@ -28,6 +29,7 @@
 	// "editor.fontWeight": "500",
 	// #endif
 	"editor.hover.delay": 1000,
+	"editor.inlineSuggest.enabled": false,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
 	"editor.occurrencesHighlight": false,
@@ -102,13 +104,26 @@
 
 	// {{{ Remote
 	"remote.extensionKind": {
-		"eamodio.gitlens": [
-			"workspace",
+		"adam-bender.commit-message-editor": [
 			"ui",
 		],
-		"editorconfig.editorconfig": [
+		"chrisdias.vscode-opennewinstance": [
 			"ui",
+		],
+		"eamodio.gitlens": [
 			"workspace",
+		],
+		"editorconfig.editorconfig": [
+			"workspace",
+		],
+		"fabiospampinato.vscode-projects-plus": [
+			"ui",
+		],
+		"jack89ita.copy-filename": [
+			"ui",
+		],
+		"jannisx11.batch-rename-extension": [
+			"ui",
 		],
 		"jeff-hykin.code-eol": [
 			"ui",
@@ -118,6 +133,9 @@
 		"arch": "linux"
 	},
 	"remote.SSH.defaultExtensions": [
+		"eamodio.gitlens",
+		"editorconfig.editorconfig",
+		"zokugun.explicit-folding",
 	],
 	// }}}
 
@@ -190,7 +208,7 @@
 	"code-eol.returnCharacter": "←",
 	"code-eol.crlfCharacter": "↵",
 	// }}}
-	
+
 	// {{{ Extension: Commit Message Editor
 	"commit-message-editor.view.defaultView": "form",
 	"commit-message-editor.view.saveAndClose": true,
@@ -205,7 +223,7 @@
 	// 	"See also: {references}",
 	//	""
 	//	""
-	//  "skip-checks: true"
+	//	"skip-checks: true"
 	// ],
 	"commit-message-editor.tokens": [
 		{
@@ -232,7 +250,7 @@
 				},
 				{
 					"label": "enhance",
-					"description": "Makes an ability/functionality even better"
+					"description": "Changes related to an improved ability/functionality, non-breaking"
 				},
 				{
 					"label": "feat",
@@ -249,6 +267,10 @@
 				{
 					"label": "refactor",
 					"description": "A code change that neither fixes a bug nor adds a feature"
+				},
+				{
+					"label": "remodel",
+					"description": "Changes related to a revised ability/functionality, usually breaking"
 				},
 				{
 					"label": "revert",
@@ -326,7 +348,15 @@
 
 	// {{{ Extension: Custom Language Properties
 	"custom-language-properties": {
-  		"makefile.comments.lineComment": "@#",
+		"makefile.comments.lineComment": "@#",
+	},
+	// }}}
+
+	// {{{ Extension: Customize UI
+	"customizeUI.stylesheet": {
+		".mac.vs-dark .view-lines": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
+		".mac.vs-dark .xterm-screen": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
+		".mac.vs-dark .input": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
 	},
 	// }}}
 
@@ -343,6 +373,11 @@
 	// #if(editor="mrcode")
 	// "explicitFolding.delay": 0,
 	// "explicitFolding.autoFold": "all",
+	// "autoFold": {
+	// 	"open": "all",
+	// 	"reload": "all",
+	// 	"save": "all"
+	// },
 	// #endif
 	// }}}
 
@@ -395,7 +430,7 @@
 	"syncSettings.additionalFiles": [
 		"~editorStorage/vsicons-custom-icons"
 	],
-	
+
 	// -- tests
 	// "syncSettings.ignoredExtensions": [
 	// 	"zokugun.cobol-folding"
@@ -451,7 +486,7 @@
 		},
 	],
 	// }}}
-		
+
 	// {{{ Extension: YAML
 	"yaml.schemaStore.enable": false,
 	// }}}
@@ -550,10 +585,10 @@
 			// 	"end": "}",
 			// },
 			{
-                "beginRegex": "\"([^\\(]{0,16})\\(",
-                "endRegex": "\\)\\1\"",
-                "foldLastLine": false,
-            },
+				"beginRegex": "\"([^\\(]{0,16})\\(",
+				"endRegex": "\\)\\1\"",
+				"foldLastLine": false,
+			},
 		]
 	},
 	// }}}
@@ -592,7 +627,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 
 	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+		// "editor.defaultFormatter": "vscode.typescript-language-features",
 		// "explicitFolding.debug": true,
 		// "explicitFolding.rules": [
 		// 	{
@@ -681,7 +716,7 @@
 
 	// {{{ Language: Makefile
 	"[makefile]": {
-		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|'\",<>/?",
+		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|'\",/?",
 	},
 	// }}}
 
@@ -782,7 +817,15 @@
 
 	// {{{ Language: typescript
 	"[typescript]": {
-		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?"
+		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?",
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "^import\\b",
+		// 		"whileRegex": "^(?:import\\b|\\/\\/)",
+		// 		"autoFold": true
+		// 	}
+		// ],
+		// "explicitFolding.autoFold": "none"
 	},
 	// }}}
 
@@ -793,4 +836,35 @@
 	// }}}
 
 
+
+	// "cronTasks.debug": "useBlank",
+	// "cronTasks.tasks": [
+	// 	{
+	// 		"at": "* * * * *",
+	// 		"run": "cronTasks.showTestMessage"
+	// 	}
+	// ],
+	// "syncSettings.crons": {
+	// 	"review": "* * * * *"
+	// }
+	
+	// "vsix.sources": {
+	// 	"opn": {
+	// 		"type": "marketplace",
+	// 		"serviceUrl": "https://open-vsx.org/vscode/gallery",
+	// 	},
+	// 	"dl": {
+	// 		"type": "file",
+	// 		"path": "~/Downloads/__temp__",
+	// 	},
+	// },
+	// "vsix.extensions": [
+	// 	// "opn:mjmlio.vscode-mjml"
+	// 	// "dl:svelte.svelte-vscode"
+	// 	// "github:jeanp413/open-remote-ssh"
+	// ],
+	// "vsix.crons": {
+	// 	"update": "0 12 * * *"
+	// },
+	"vsix.debug": true,
 }
