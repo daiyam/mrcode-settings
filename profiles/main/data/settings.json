@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+	// {{{ Breadcrumbs
+	"breadcrumbs.enabled": false,
+	// }}}
+
 	// {{{ CodeLens
 	"debug.javascript.codelens.npmScripts": "never",
 	// }}}
@@ -12,13 +16,8 @@
 	"editor.autoIndent": "keep",
 	"editor.bracketPairColorization.enabled": false,
 	"editor.copyWithSyntaxHighlighting": false,
-	// #if(editor="mrcode")
-	// "editor.foldingStrategy": "explicit",
-	// "editor.showFoldingLastLine": false,
-	// #else
-	// "editor.foldingStrategy": "auto",
-	// "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
-	// #endif
+	"editor.foldingStrategy": "auto",
+	"editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
 	// #if(os="mac")
@@ -50,8 +49,8 @@
 	"editor.showFoldingControls": "always",
 	"editor.trimAutoWhitespace": false,
 	"editor.unusualLineTerminators": "auto",
-	"editor.wordWrap": "off",
-	"breadcrumbs.enabled": false,
+	"editor.wordWrap": "bounded",
+	"editor.wordWrapColumn": 200,
 	// }}}
 
 	// {{{ File Explorer
@@ -105,7 +104,10 @@
 	// {{{ Remote
 	"remote.extensionKind": {
 		"adam-bender.commit-message-editor": [
-			"ui",
+			"workspace",
+		],
+		"ArturoDent.custom-language-syntax": [
+			"workspace",
 		],
 		"chrisdias.vscode-opennewinstance": [
 			"ui",
@@ -352,14 +354,6 @@
 	},
 	// }}}
 
-	// {{{ Extension: Customize UI
-	"customizeUI.stylesheet": {
-		".mac.vs-dark .view-lines": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
-		".mac.vs-dark .xterm-screen": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
-		".mac.vs-dark .input": "cursor: -webkit-image-set(url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAL0lEQVQoz2NgCD3x//9/BhBYBWdhgFVAiVW4JBFKGIa4AqD0//9D3pt4I4tAdAMAHTQ/j5Zom30AAAAASUVORK5CYII=') 1x, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAz0lEQVRIx2NgYGBY/R8I/vx5eelX3n82IJ9FxGf6tksvf/8FiTMQAcAGQMDvSwu09abffY8QYSAScNk45G198eX//yev73/4///701eh//kZSARckrNBRvz//+8+6ZohwCzjGNjdgQxkAg7B9WADeBjIBqtJCbhRA0YNoIkBSNmaPEMoNmA0FkYNoFKhapJ6FGyAH3nauaSmPfwI0v/3OukVi0CIZ+F25KrtYcx/CTIy0e+rC7R1Z4KMICVTQQ14feVXIbR695u14+Ir4gwAAD49E54wc1kWAAAAAElFTkSuQmCC') 2x) 5 8, text;",
-	},
-	// }}}
-
 	// {{{ Extension: Explicit Folding
 	"explicitFolding.rules": {
 		"*": {
@@ -368,17 +362,17 @@
 		},
 	},
 	"explicitFolding.additionalSchemes": [
+		"git",
 		"gitlens",
 	],
-	// #if(editor="mrcode")
+	// "explicitFolding.debug": true,
 	// "explicitFolding.delay": 0,
-	// "explicitFolding.autoFold": "all",
+	"explicitFolding.autoFold": "all",
 	// "autoFold": {
 	// 	"open": "all",
 	// 	"reload": "all",
 	// 	"save": "all"
 	// },
-	// #endif
 	// }}}
 
 	// {{{ Extension: GitLens
@@ -400,6 +394,8 @@
 			"compare": false
 		}
 	},
+	"gitlens.telemetry.enabled": false,
+	"gitlens.terminal.overrideGitEditor": false,
 	// }}}
 
 	// {{{ Extension: Google Translate
@@ -450,6 +446,9 @@
 	"taskExplorer.enableExplorerView": false,
 	"taskExplorer.enableSideBar": true,
 	"taskExplorer.enableTsc": false,
+	"taskExplorer.pathToPrograms": {
+		"make": "make"
+	},
 	// }}}
 
 	// {{{ Extension: Test Explorer UI
@@ -617,7 +616,8 @@
 				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z0-9]+)[^>\/]*>",
 				"endRegex": "<\\/\\1>"
 			},
-		]
+		],
+		"explicitFolding.autoFold": "4",
 	},
 	// }}}
 
@@ -642,13 +642,14 @@
 	// {{{ Language: JSON
 	"[json]": {
 		"editor.foldingStrategy": "indentation",
-		"editor.formatOnSave": true,
+		// "editor.formatOnSave": true,
 		"explicitFolding.autoFold": "none",
 	},
 	// }}}
 
 	// {{{ Language: JSON with Comments
 	"[jsonc]": {
+		// "editor.foldingStrategy": "indentation",
 		"explicitFolding.autoFold": "none",
 		// "explicitFolding.debug": true,
 		// "explicitFolding.rules": [
@@ -866,5 +867,5 @@
 	// "vsix.crons": {
 	// 	"update": "0 12 * * *"
 	// },
-	"vsix.debug": true,
+	// "vsix.debug": true,
 }
