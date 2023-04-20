@@ -173,8 +173,7 @@
 	// }}}
 
 	// {{{ Update
-	// #enable(editor!="mrcode")
-	// "update.mode": "manual",
+	"update.mode": "manual",
 	// }}}
 
 	// {{{ Window

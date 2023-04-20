@@ -5,14 +5,12 @@ disabled:
     uuid: 4bbfd0d5-c934-445f-ab56-1b2167378db2
   - id: crystal-lang-tools.crystal-lang
     uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
-  - id: davidbwaters.macos-modern-theme
-    uuid: ad4ee4d7-9d78-49e4-801e-b2fef4eaff6e
   - id: ddiu8081.moegi-theme
     uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
+  - id: dez64ru.macos-modern-theme
+    uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
   - id: drKnoxy.eslint-disable-snippets
     uuid: e55376f2-3b3e-4916-8dbf-34df2fce687b
-  - id: fabianlauer.vs-code-xml-format
-    uuid: 7752d5d1-7dab-46f8-bc86-ffca8c2d33e7
   - id: fabiospampinato.vscode-todo-plus
     uuid: 0661e679-8a32-433e-baeb-8980f53edb55
   - id: Gruntfuggly.todo-tree
@@ -37,16 +35,16 @@ disabled:
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: nickdemayo.vscode-json-editor
     uuid: 951c33b7-6ec9-4351-8a17-ededc09c997f
-  - id: pucelle.run-on-save
-    uuid: f23b142c-d9c8-4bce-b791-57315e8cf4f3
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
+  - id: pucelle.run-on-save
+    uuid: f23b142c-d9c8-4bce-b791-57315e8cf4f3
   - id: RandomFractalsInc.snippets-viewer
     uuid: b3b9b999-60b3-4dfd-a086-fe4f7c9d136e
-  - id: samverschueren.linter-xo
-    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
+  - id: samverschueren.linter-xo
+    uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: SimonSiefke.svg-preview
     uuid: 51cd7dfb-14fa-4fcc-aa42-16add9281456
   - id: slevesque.vscode-hexdump
