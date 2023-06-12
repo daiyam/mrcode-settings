@@ -21,7 +21,7 @@
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
 	// #if(os="mac")
-	// "editor.fontWeight": "300",
+	// "editor.fontWeight": "400",
 	// #elif(os="windows")
 	// "editor.fontWeight": "400",
 	// #else
@@ -159,10 +159,8 @@
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.enableMultiLinePasteWarning": false,
-	// #enable(editor="mrcode")
-	// "terminal.integrated.enableWordLinks": false,
 	"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontWeight": 500,
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.lineHeight": 1.2,
 	"terminal.integrated.letterSpacing": 1,
@@ -186,8 +184,6 @@
 	// {{{ Workbench
 	"workbench.colorTheme": "Zokugun Obsidium",
 	"workbench.enableExperiments": false,
-	// #enable(editor="mrcode")
-	// "workbench.editor.openPositioning": "sort",
 	"workbench.editor.decorations.colors": false,
 	"workbench.editor.decorations.badges": false,
 	"workbench.iconTheme": "vscode-icons",
@@ -483,6 +479,57 @@
 			"icon": "koascript_dark", "extensions": ["ks"], "format": "svg", "light": false
 		},
 	],
+	// }}}
+
+	// {{{ Extension: VSIX Manager
+	"vsix.applyChanges": false,
+	"vsix.sources": {
+		"ms": {
+			"type": "marketplace",
+			"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
+		},
+		"ov": {
+			"type": "marketplace",
+			"serviceUrl": "https://open-vsx.org/vscode/gallery",
+		},
+	},
+	"vsix.extensions": [
+		"ov:adam-bender.commit-message-editor",
+		"ms:AlanWalk.markdown-navigation",
+		"ms:ArturoDent.custom-language-syntax",
+		"ms:chrisdias.vscode-opennewinstance",
+		"ms:fabiospampinato.vscode-projects-plus",
+		"ms:herrmannplatz.npm-dependency-links",
+		"ms:icai.rem-rpx",
+		"ms:jack89ita.copy-filename",
+		"ms:jeff-hykin.code-eol",
+		"ms:jtr.vscode-position",
+		"ms:JannisX11.batch-rename-extension",
+		"ms:kaoscript.kaoscript-language",
+		"ms:percygrunwald.vscode-intellij-recent-files",
+		"ms:PeterSchmalfeldt.explorer-exclude",
+		"ms:rpinski.shebang-snippets",
+		"ms:ryu1kn.remote-repo-viewer",
+		"ms:sandipchitale.vscode-fspath-desktop-integration",
+		"ms:stubailo.ignore-gitignore",
+		"-ov:hbenl.test-adapter-converter",
+		"-ms:connorshea.vscode-test-explorer-status-bar",
+		"-ms:drKnoxy.eslint-disable-snippets",
+		"-ms:HyunKyunMoon.gzipdecompressor",
+		"-ms:jakearl.handydandy-notebook",
+		"-ms:kdcro101.favorites",
+		"-ms:nickdemayo.vscode-json-editor",
+		"-ms:pucelle.run-on-save",
+		"-ms:SimonSiefke.svg-preview",
+		"-ms:spmeesseman.vscode-taskexplorer",
+		"-ms:slevesque.vscode-hexdump",
+		"-ms:tht13.html-preview-vscode",
+		"-ms:uyiosa-enabulele.reopenclosedtab",
+	],
+	// "vsix.crons": {
+	// 	"update": "0 12 * * *"
+	// },
+	"vsix.debug": true,
 	// }}}
 
 	// {{{ Extension: YAML
@@ -848,52 +895,5 @@
 	// 	"review": "* * * * *"
 	// }
 	
-	"vsix.applyChanges": false,
-	"vsix.sources": {
-		"ms": {
-			"type": "marketplace",
-			"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
-		},
-		"ov": {
-			"type": "marketplace",
-			"serviceUrl": "https://open-vsx.org/vscode/gallery",
-		},
-	},
-	"vsix.extensions": [
-		"ms:acherkashin.virtualbox-extension",
-		"ms:AlanWalk.markdown-navigation",
-		"ms:ArturoDent.custom-language-syntax",
-		"ms:chrisdias.vscode-opennewinstance",
-		"ms:fabiospampinato.vscode-projects-plus",
-		"ms:herrmannplatz.npm-dependency-links",
-		"ms:icai.rem-rpx",
-		"ms:jack89ita.copy-filename",
-		"ms:jeff-hykin.code-eol",
-		"ms:jtr.vscode-position",
-		"ms:JannisX11.batch-rename-extension",
-		"ms:kaoscript.kaoscript-language",
-		"ms:percygrunwald.vscode-intellij-recent-files",
-		"ms:PeterSchmalfeldt.explorer-exclude",
-		"ms:rpinski.shebang-snippets",
-		"ms:ryu1kn.remote-repo-viewer",
-		"ms:sandipchitale.vscode-fspath-desktop-integration",
-		"ms:spmeesseman.vscode-taskexplorer",
-		"ms:stubailo.ignore-gitignore",
-		"-ov:hbenl.test-adapter-converter",
-		"-ms:connorshea.vscode-test-explorer-status-bar",
-		"-ms:drKnoxy.eslint-disable-snippets",
-		"-ms:HyunKyunMoon.gzipdecompressor",
-		"-ms:jakearl.handydandy-notebook",
-		"-ms:kdcro101.favorites",
-		"-ms:nickdemayo.vscode-json-editor",
-		"-ms:pucelle.run-on-save",
-		"-ms:SimonSiefke.svg-preview",
-		"-ms:slevesque.vscode-hexdump",
-		"-ms:tht13.html-preview-vscode",
-		"-ms:uyiosa-enabulele.reopenclosedtab",
-	],
-	// "vsix.crons": {
-	// 	"update": "0 12 * * *"
-	// },
-	"vsix.debug": true,
+	
 }

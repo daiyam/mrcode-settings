@@ -1,4 +1,6 @@
 disabled:
+  - id: bierner.markdown-preview-github-styles
+    uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
   - id: bungcip.better-toml
     uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: crystal-lang-tools.crystal-lang
@@ -7,10 +9,10 @@ disabled:
     uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
   - id: dez64ru.macos-modern-theme
     uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
+  - id: eg2.vscode-npm-script
+    uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
   - id: fabiospampinato.vscode-todo-plus
     uuid: 0661e679-8a32-433e-baeb-8980f53edb55
-  - id: Gruntfuggly.todo-tree
-    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
   - id: hbenl.vscode-mocha-test-adapter
     uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
   - id: hbenl.vscode-test-explorer
@@ -19,12 +21,8 @@ disabled:
     uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
   - id: jebbs.plantuml
     uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
-  - id: mechatroner.rainbow-csv
-    uuid: 3792588c-3d35-442d-91ea-fe6a755e8155
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
-  - id: RandomFractalsInc.snippets-viewer
-    uuid: b3b9b999-60b3-4dfd-a086-fe4f7c9d136e
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: samverschueren.linter-xo
@@ -40,18 +38,12 @@ enabled:
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
   - id: bierner.markdown-mermaid
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
-  - id: bierner.markdown-preview-github-styles
-    uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
   - id: DotJoshJohnson.xml
     uuid: 0cb81da2-1880-4755-9995-0ae9cc728e20
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: EditorConfig.EditorConfig
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
-  - id: eg2.vscode-npm-script
-    uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
-  - id: hbenl.test-adapter-converter
-    uuid: fcc7f3d5-c349-4329-85ab-4760fc641520
   - id: hilleer.yaml-plus-json
     uuid: a5c960d9-3d35-4b3f-9d53-bafe782ddf1a
   - id: jeanp413.open-remote-ssh
