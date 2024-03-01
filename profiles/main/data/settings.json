@@ -94,6 +94,7 @@
 
 	// {{{ Git
 	"git.confirmSync": false,
+	"git.suggestSmartCommit": false,
 	// }}}
 
 	// {{{ Keyboard
@@ -163,8 +164,8 @@
 	"terminal.integrated.fontWeight": 500,
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.lineHeight": 1.2,
-	"terminal.integrated.letterSpacing": 1,
-	"terminal.integrated.minimumContrastRatio": 1,
+	"terminal.integrated.letterSpacing": 0.9,
+	"terminal.integrated.minimumContrastRatio": 0,
 	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.tabs.hideCondition": "never",
 	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
@@ -767,63 +768,70 @@
 	},
 	// }}}
 
+	// {{{ Language: Markdown
+	// "[markdown]": {
+	// 	"explicitFolding.debug": true,
+	// 	"explicitFolding.rules": [],
+	// },
+	// }}}
+
 	// {{{ Language: PHP
 	"[php]": {
 		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
 		// "explicitFolding.debug": true,
-		"explicitFolding.rules": [
-			{
-				"begin": "/*",
-				"end": "*/",
-				"nested": false
-			},
-			{
-				"begin": "\"",
-				"end": "\"",
-				"nested": false
-			},
-			{
-				"beginRegex": "(?<!\\w)'",
-				"endRegex": "'",
-				"nested": false
-			},
-			{
-				"beginRegex": "(?:case|default)[^:]*:",
-				"endRegex": "break;|(.)(?=case|default|\\})",
-				"foldLastLine": [true, false]
-			},
-			{
-				"beginRegex": "{",
-				"middleRegex": "}[^}]+{",
-				"endRegex": "}\\s*(else|if)?",
-				"foldLastLine": [true, false]
-			},
-			{
-				"beginRegex": "if\\s*\\(.+\\)\\s*[^\\{]?",
-				"middleRegex": "else(?:\\s*if\\s*\\(.+\\)\\s*[^\\{]?)?",
-				"endRegex": ";"
-			},
-			{
-				"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z]+)[^>]*[^>\\/]*>",
-				"endRegex": "<\\/\\1>"
-			},
-			{
-				"beginRegex": "<\\?(?:\\=|php)",
-				"endRegex": "\\?>"
-			},
-			{
-				"begin": "[",
-				"end": "]"
-			},
-			{
-				"begin": "(",
-				"end": ")"
-			}
-		],
-		"explicitFolding.perFiles": {
-			"*.special.js": [
-			]
-		},
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"begin": "/*",
+		// 		"end": "*/",
+		// 		"nested": false
+		// 	},
+		// 	{
+		// 		"begin": "\"",
+		// 		"end": "\"",
+		// 		"nested": false
+		// 	},
+		// 	{
+		// 		"beginRegex": "(?<!\\w)'",
+		// 		"endRegex": "'",
+		// 		"nested": false
+		// 	},
+		// 	{
+		// 		"beginRegex": "(?:case|default)[^:]*:",
+		// 		"endRegex": "break;|(.)(?=case|default|\\})",
+		// 		"foldLastLine": [true, false]
+		// 	},
+		// 	{
+		// 		"beginRegex": "{",
+		// 		"middleRegex": "}[^}]+{",
+		// 		"endRegex": "}\\s*(else|if)?",
+		// 		"foldLastLine": [true, false]
+		// 	},
+		// 	{
+		// 		"beginRegex": "if\\s*\\(.+\\)\\s*[^\\{]?",
+		// 		"middleRegex": "else(?:\\s*if\\s*\\(.+\\)\\s*[^\\{]?)?",
+		// 		"endRegex": ";"
+		// 	},
+		// 	{
+		// 		"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z]+)[^>]*[^>\\/]*>",
+		// 		"endRegex": "<\\/\\1>"
+		// 	},
+		// 	{
+		// 		"beginRegex": "<\\?(?:\\=|php)",
+		// 		"endRegex": "\\?>"
+		// 	},
+		// 	{
+		// 		"begin": "[",
+		// 		"end": "]"
+		// 	},
+		// 	{
+		// 		"begin": "(",
+		// 		"end": ")"
+		// 	}
+		// ],
+		// "explicitFolding.perFiles": {
+		// 	"*.special.js": [
+		// 	]
+		// },
 	},
 	// }}}
 
@@ -894,6 +902,5 @@
 	// "syncSettings.crons": {
 	// 	"review": "* * * * *"
 	// }
-	
-	
+
 }

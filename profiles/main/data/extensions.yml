@@ -21,10 +21,6 @@ disabled:
     uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
   - id: jebbs.plantuml
     uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
-  - id: paragdiwan.gitpatch
-    uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
-  - id: redhat.vscode-yaml
-    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: samverschueren.linter-xo
     uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: svipas.control-snippets
@@ -56,6 +52,10 @@ enabled:
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
     uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
+  - id: paragdiwan.gitpatch
+    uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
+  - id: redhat.vscode-yaml
+    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: TakumiI.markdowntable
     uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
   - id: vscode-icons-team.vscode-icons
