@@ -21,6 +21,8 @@ disabled:
     uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
   - id: jebbs.plantuml
     uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
+  - id: ms-vscode.test-adapter-converter
+    uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: samverschueren.linter-xo
     uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: svipas.control-snippets
@@ -52,6 +54,8 @@ enabled:
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
     uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
+  - id: OMKOV.vscode-ebnf
+    uuid: null
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
   - id: redhat.vscode-yaml
@@ -63,10 +67,10 @@ enabled:
   - id: zokugun.automatic-editor-sorter
     uuid: c798fb6c-807d-4d88-ba52-71bd353d973a
   - id: zokugun.cron-tasks
-    uuid: eb05256f-c7aa-4554-95c6-1bb8e30e0cea
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
   - id: zokugun.vsix-manager
-    uuid: e4b59d0c-3bf7-46d4-8e66-dad8da399023
+    uuid: 8f6c06c3-6eb7-46c8-898b-72d3057ebf45
   - id: zokugun.zokugun-theme
     uuid: 93474243-9833-480b-ab2d-637000ce973d

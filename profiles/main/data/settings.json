@@ -16,6 +16,7 @@
 	"editor.autoIndent": "keep",
 	"editor.bracketPairColorization.enabled": false,
 	"editor.copyWithSyntaxHighlighting": false,
+	"editor.cursorWidth": 3,
 	"editor.foldingStrategy": "auto",
 	"editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
 	"editor.fontSize": 14,
@@ -27,6 +28,7 @@
 	// #else
 	// "editor.fontWeight": "500",
 	// #endif
+	"editor.fontLigatures": false,
 	"editor.hover.delay": 1000,
 	"editor.inlineSuggest.enabled": false,
 	"editor.insertSpaces": false,
@@ -507,6 +509,7 @@
 		"ms:jtr.vscode-position",
 		"ms:JannisX11.batch-rename-extension",
 		"ms:kaoscript.kaoscript-language",
+		"ms:omkov.vscode-ebnf",
 		"ms:percygrunwald.vscode-intellij-recent-files",
 		"ms:PeterSchmalfeldt.explorer-exclude",
 		"ms:rpinski.shebang-snippets",
@@ -673,17 +676,17 @@
 	"javascript.preferences.quoteStyle": "single",
 	"javascript.updateImportsOnFileMove.enabled": "always",
 
-	"[javascript]": {
-		// "editor.defaultFormatter": "vscode.typescript-language-features",
-		// "explicitFolding.debug": true,
-		// "explicitFolding.rules": [
-		// 	{
-		// 		"beginRegex": "^import\\b",
-		// 		"whileRegex": "^(?:import\\b|\\/\\/)",
-		// 		"autoFold": true
-		// 	}
-		// ],
-	},
+	// "[javascript]": {
+	// 	"editor.defaultFormatter": "vscode.typescript-language-features",
+	// 	"explicitFolding.debug": true,
+	// 	"explicitFolding.rules": [
+	// 		{
+	// 			"beginRegex": "^import\\b",
+	// 			"whileRegex": "^(?:import\\b|\\/\\/)",
+	// 			"autoFold": true
+	// 		}
+	// 	],
+	// },
 	// }}}
 
 	// {{{ Language: JSON
@@ -704,7 +707,7 @@
 		// 		"beginRegex": "\\/\\/",
 		// 		"endRegex": "^\\s*$",
 		// 		"bypassProtection": true
-		// 	}
+		// 	},
 		// ]
 	},
 	// }}}
@@ -764,7 +767,7 @@
 
 	// {{{ Language: Makefile
 	"[makefile]": {
-		"editor.wordSeparators": "`~!@^&*()-+[{]}\\|'\",/?",
+		"editor.wordSeparators": "`@^&*()-+[{]}\\|'\",/?",
 	},
 	// }}}
 
