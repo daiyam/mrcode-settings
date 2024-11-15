@@ -392,8 +392,18 @@
 			"compare": false
 		}
 	},
+	"gitlens.plusFeatures.enabled": false,
 	"gitlens.telemetry.enabled": false,
 	"gitlens.terminal.overrideGitEditor": false,
+	"gitlens.views.scm.grouped.views": {
+		"commits": false,
+		"branches": false,
+		"remotes": false,
+		"stashes": false,
+		"tags": false,
+		"worktrees": false,
+		"contributors": false
+	},
 	// }}}
 
 	// {{{ Extension: Google Translate
@@ -499,8 +509,7 @@
 	"vsix.extensions": [
 		"ov:adam-bender.commit-message-editor",
 		"ms:AlanWalk.markdown-navigation",
-		"ms:ArturoDent.custom-language-syntax",
-		"ms:chrisdias.vscode-opennewinstance",
+		"ms:ArturoDent.custom-language-syntax@0.5.4",
 		"ms:fabiospampinato.vscode-projects-plus",
 		"ms:herrmannplatz.npm-dependency-links",
 		"ms:icai.rem-rpx",
@@ -509,10 +518,10 @@
 		"ms:jtr.vscode-position",
 		"ms:JannisX11.batch-rename-extension",
 		"ms:kaoscript.kaoscript-language",
-		"ms:omkov.vscode-ebnf",
+		"ms:OMKOV.vscode-ebnf",
 		"ms:percygrunwald.vscode-intellij-recent-files",
 		"ms:PeterSchmalfeldt.explorer-exclude",
-		"ms:rpinski.shebang-snippets",
+		"ms:rpinski.shebang-snippets@0.1.4",
 		"ms:ryu1kn.remote-repo-viewer",
 		"ms:sandipchitale.vscode-fspath-desktop-integration",
 		"ms:stubailo.ignore-gitignore",

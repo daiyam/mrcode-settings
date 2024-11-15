@@ -3,12 +3,12 @@ disabled:
     uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
   - id: bungcip.better-toml
     uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
-  - id: crystal-lang-tools.crystal-lang
-    uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
   - id: ddiu8081.moegi-theme
     uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
   - id: dez64ru.macos-modern-theme
     uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
+  - id: crystal-lang-tools.crystal-lang
+    uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
   - id: eg2.vscode-npm-script
     uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
   - id: fabiospampinato.vscode-todo-plus
@@ -34,6 +34,8 @@ disabled:
 enabled:
   - id: alefragnani.Bookmarks
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
+  - id: bbenoist.Nix
+    uuid: 5b21bd54-5258-4a3e-887f-193d9bb5f063
   - id: bierner.markdown-mermaid
     uuid: f8d0ffc4-66bb-4a9c-8149-ef8f043691a1
   - id: DotJoshJohnson.xml
@@ -54,8 +56,6 @@ enabled:
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
     uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
-  - id: OMKOV.vscode-ebnf
-    uuid: null
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
   - id: redhat.vscode-yaml
@@ -70,6 +70,8 @@ enabled:
     uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
+  - id: zokugun.open-to-spick-and-span-window
+    uuid: 3a757e40-138d-4a50-a97d-5308ae229cd7
   - id: zokugun.vsix-manager
     uuid: 8f6c06c3-6eb7-46c8-898b-72d3057ebf45
   - id: zokugun.zokugun-theme
