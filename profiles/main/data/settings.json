@@ -4,6 +4,10 @@
 	"breadcrumbs.enabled": false,
 	// }}}
 
+	// {{{ Chat
+	"chat.commandCenter.enabled": false,
+	// }}}
+
 	// {{{ CodeLens
 	"debug.javascript.codelens.npmScripts": "never",
 	// }}}
@@ -33,11 +37,12 @@
 	"editor.inlineSuggest.enabled": false,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
-	"editor.occurrencesHighlight": false,
+	"editor.occurrencesHighlight": "off",
+	"editor.pasteAs.enabled": false,
 	"editor.quickSuggestions": {
 		"other": false,
 		"comments": false,
-		"strings": false
+		"strings": false,
 	},
 	"editor.renderControlCharacters": true,
 	"editor.renderWhitespace": "none",
@@ -49,7 +54,9 @@
 	],
 	"editor.selectionHighlight": false,
 	"editor.showFoldingControls": "always",
+	"editor.stickyScroll.enabled": false,
 	"editor.trimAutoWhitespace": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
 	"editor.unusualLineTerminators": "auto",
 	"editor.wordWrap": "bounded",
 	"editor.wordWrapColumn": 200,
@@ -58,6 +65,7 @@
 	// {{{ File Explorer
 	"explorer.autoReveal": false,
 	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
 	"explorer.openEditors.visible": 0,
@@ -192,21 +200,36 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
-	// "workbench.settings.useSplitJSON": true,
 	// }}}
 
 	// Extensions
 	"extensions.ignoreRecommendations": true,
 	"redhat.telemetry.enabled": false,
 
+	// {{{ Extension: Auto Close Tag
+	"auto-close-tag.SublimeText3Mode": true,
+	// }}}
+
 	// {{{ Extension: Code EOL
-	"code-eol.newlineCharacter":".",
-	"code-eol.newlineCharacterStyle" : {
+	"code-eol.newlineCharacter": ".",
+	"code-eol.newlineCharacterStyle": {
 		"color": "#009999",
 		"opacity": 0.7
 	},
 	"code-eol.returnCharacter": "←",
 	"code-eol.crlfCharacter": "↵",
+	// }}}
+
+	// {{{ Extension: colorize
+	"colorize.include": [
+		"**/*.css",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.less",
+		"**/*.styl",
+		"**/*.yaml",
+		"**/*.mustache",
+	],
 	// }}}
 
 	// {{{ Extension: Commit Message Editor
@@ -392,6 +415,7 @@
 			"compare": false
 		}
 	},
+	"gitlens.outputLevel": "error",
 	"gitlens.plusFeatures.enabled": false,
 	"gitlens.telemetry.enabled": false,
 	"gitlens.terminal.overrideGitEditor": false,
@@ -415,8 +439,32 @@
 	"markdown-preview-github-styles.colorTheme": "light",
 	// }}}
 
+	// {{{ Extension: Projects+
+	"projects.viewOpenInNewWindow": true,
+	// }}}
+
 	// {{{ Extension: Rem rpx px - Converter
 	"remrpx.remEqual": 16,
+	// }}}
+
+	// {{{ Extension: Rust Assist
+	"rust-assist.diagnosticsOnStartup": false,
+	"rust-assist.diagnosticsOnSave": false,
+	"rust-assist.formatOnSave": true,
+	// }}}
+
+	// {{{ Extension: Search Presets
+	"search-presets.custom": {
+		"echo": {
+			"query": "^\\s*echo",
+			"isRegex": true,
+			"filesToInclude": "src/**/*.ks"
+		},
+	},
+	// }}}
+
+	// {{{ Extension: Svelte for VS Code
+	"svelte.enable-ts-plugin": true,
 	// }}}
 
 	// {{{ Extension: SVG Preview
@@ -486,11 +534,17 @@
 	// "vsicons.customIconFolderPath": "#{editorStorage}",
 	"vsicons.associations.files": [
 		{
-			"icon": "koascript_light", "extensions": ["ks"], "format": "svg", "light": true
+			"icon": "koascript_light",
+			"extensions": ["ks"],
+			"format": "svg",
+			"light": true,
 		},
 		{
-			"icon": "koascript_dark", "extensions": ["ks"], "format": "svg", "light": false
-		},
+			"icon": "koascript_dark",
+			"extensions": ["ks"],
+			"format": "svg",
+			"light": false,
+		}
 	],
 	// }}}
 
@@ -499,7 +553,7 @@
 	"vsix.sources": {
 		"ms": {
 			"type": "marketplace",
-			"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
+			"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
 		},
 		"ov": {
 			"type": "marketplace",
@@ -518,13 +572,17 @@
 		"ms:jtr.vscode-position",
 		"ms:JannisX11.batch-rename-extension",
 		"ms:kaoscript.kaoscript-language",
+		"ms:mooman219.rust-assist",
 		"ms:OMKOV.vscode-ebnf",
 		"ms:percygrunwald.vscode-intellij-recent-files",
 		"ms:PeterSchmalfeldt.explorer-exclude",
+		"ms:ranyitz.search-presets",
 		"ms:rpinski.shebang-snippets@0.1.4",
 		"ms:ryu1kn.remote-repo-viewer",
 		"ms:sandipchitale.vscode-fspath-desktop-integration",
 		"ms:stubailo.ignore-gitignore",
+		"ms:TatsuyaNakamori.resttext",
+		"ms:huytd.nord-light",
 		"-ov:hbenl.test-adapter-converter",
 		"-ms:connorshea.vscode-test-explorer-status-bar",
 		"-ms:drKnoxy.eslint-disable-snippets",
@@ -686,7 +744,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 
 	// "[javascript]": {
-	// 	"editor.defaultFormatter": "vscode.typescript-language-features",
+	// "editor.defaultFormatter": "vscode.typescript-language-features",
 	// 	"explicitFolding.debug": true,
 	// 	"explicitFolding.rules": [
 	// 		{
@@ -723,7 +781,7 @@
 
 	// {{{ Language: kaoscript
 	"[kaoscript]": {
-		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?"
+		"editor.wordSeparators": "`~!#%^&*()-=+[{]}\\|;:'\",.<>/?",
 	},
 	// }}}
 
@@ -736,11 +794,11 @@
 	// {{{ Language: Log
 	"[log]": {
 		// "explicitFolding.debug": true,
-		"explicitFolding.rules": [
-			{
-				"separator": "process"
-			},
-		],
+		// "explicitFolding.rules": [
+		//   {
+		//     "separator": "process"
+		//   }
+		// ]
 	},
 	// }}}
 
@@ -770,7 +828,7 @@
 				"middleRegex": "\\belse(?:if)?\\b",
 				"endRegex": "\\bend\\b",
 			},
-		],
+		]
 	},
 	// }}}
 
@@ -785,6 +843,12 @@
 	// 	"explicitFolding.debug": true,
 	// 	"explicitFolding.rules": [],
 	// },
+	// }}}
+
+	// {{{ Language: Plain Text
+	"[plaintext]": {
+		"explicitFolding.autoFold": "none",
+	},
 	// }}}
 
 	// {{{ Language: PHP
@@ -849,23 +913,23 @@
 
 	// {{{ Language: Python
 	"[python]": {
-		"explicitFolding.rules": [
-			{
-				"beginRegex": "\"\"\"",
-				"endRegex": "\"\"\"",
-			},
-			{
-				"separatorRegex": "#\\s*%%"
-			},
-			{
-				"begin": "(",
-				"end": ")",
-			},
-			{
-				"indentation": true,
-				"offSide": true
-			}
-		]
+		// "explicitFolding.rules": [
+		// 	{
+		// 		"beginRegex": "\"\"\"",
+		// 		"endRegex": "\"\"\"",
+		// 	},
+		// 	{
+		// 		"separatorRegex": "#\\s*%%"
+		// 	},
+		// 	{
+		// 		"begin": "(",
+		// 		"end": ")",
+		// 	},
+		// 	{
+		// 		"indentation": true,
+		// 		"offSide": true
+		// 	}
+		// ]
 	},
 	// }}}
 
@@ -880,6 +944,19 @@
 		// 	},
 		// ],
 	},
+	// }}}
+
+	// {{{ Language: Svelte
+	// "[svelte]": {
+	//   // "explicitFolding.debug": true,
+	//   // "explicitFolding.rules": [
+	//   //   {
+	//   //     "beginRegex": "^<(\\w+)",
+	//   //     "endRegex": "^<\\/\\1>"
+	//   //   }
+	//   // ],
+	//   // "explicitFolding.autoFold": "none"
+	// },
 	// }}}
 
 	// {{{ Language: typescript
@@ -898,11 +975,9 @@
 
 	// {{{ Language: XML
 	"[xml]": {
-		"editor.foldingStrategy": "indentation"
+		"editor.foldingStrategy": "indentation",
 	},
 	// }}}
-
-
 
 	// "cronTasks.debug": "useBlank",
 	// "cronTasks.tasks": [
@@ -914,5 +989,4 @@
 	// "syncSettings.crons": {
 	// 	"review": "* * * * *"
 	// }
-
 }

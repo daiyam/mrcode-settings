@@ -190,5 +190,13 @@
         "key": "shift+cmd+e shift+cmd+r",
         "command": "batchRename.rename",
         "when": "filesExplorerFocus && !explorerResourceIsFolder"
+    },
+    {
+        "key": "cmd+e cmd+f",
+        "command": "search-presets.search"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-search-presets.search"
     }
 ]
