@@ -11,7 +11,7 @@
 	// {{{ CodeLens
 	"debug.javascript.codelens.npmScripts": "never",
 	// }}}
-	
+
 	// {{{ DiffEditor
 	"diffEditor.ignoreTrimWhitespace": false,
 	// }}}
@@ -201,23 +201,13 @@
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
 	// }}}
-
+	
 	// Extensions
 	"extensions.ignoreRecommendations": true,
 	"redhat.telemetry.enabled": false,
-
+	
 	// {{{ Extension: Auto Close Tag
 	"auto-close-tag.SublimeText3Mode": true,
-	// }}}
-
-	// {{{ Extension: Code EOL
-	"code-eol.newlineCharacter": ".",
-	"code-eol.newlineCharacterStyle": {
-		"color": "#009999",
-		"opacity": 0.7
-	},
-	"code-eol.returnCharacter": "←",
-	"code-eol.crlfCharacter": "↵",
 	// }}}
 
 	// {{{ Extension: colorize
@@ -375,6 +365,16 @@
 	},
 	// }}}
 
+	// {{{ Extension: EndOfLine
+	"endofline.cr.symbol": "←",
+	"endofline.crlf.symbol": "↵",
+	"endofline.lf.symbol": ".",
+	"endofline.style": {
+		"color": "#009999",
+		"opacity": 0.5
+	},
+	// }}}
+
 	// {{{ Extension: Explicit Folding
 	"explicitFolding.rules": {
 		"*": {
@@ -402,6 +402,7 @@
 	},
 	"gitlens.codeLens.enabled": false,
 	"gitlens.currentLine.enabled": false,
+	// "gitlens.debug": true,
 	"gitlens.gitCommands.skipConfirmations": [
 		"fetch:command",
 		"stash-push:command",
@@ -482,7 +483,6 @@
 	"syncSettings.additionalFiles": [
 		"~editorStorage/vsicons-custom-icons"
 	],
-
 	// -- tests
 	// "syncSettings.ignoredExtensions": [
 	// 	"zokugun.cobol-folding"
@@ -535,13 +535,17 @@
 	"vsicons.associations.files": [
 		{
 			"icon": "koascript_light",
-			"extensions": ["ks"],
+			"extensions": [
+				"ks"
+			],
 			"format": "svg",
 			"light": true,
 		},
 		{
 			"icon": "koascript_dark",
-			"extensions": ["ks"],
+			"extensions": [
+				"ks"
+			],
 			"format": "svg",
 			"light": false,
 		}
@@ -568,7 +572,6 @@
 		"ms:herrmannplatz.npm-dependency-links",
 		"ms:icai.rem-rpx",
 		"ms:jack89ita.copy-filename",
-		"ms:jeff-hykin.code-eol",
 		"ms:jtr.vscode-position",
 		"ms:JannisX11.batch-rename-extension",
 		"ms:kaoscript.kaoscript-language",
@@ -581,6 +584,7 @@
 		"ms:ryu1kn.remote-repo-viewer",
 		"ms:sandipchitale.vscode-fspath-desktop-integration",
 		"ms:stubailo.ignore-gitignore",
+		"ms:TakumiI.markdowntable",
 		"ms:TatsuyaNakamori.resttext",
 		"ms:huytd.nord-light",
 		"-ov:hbenl.test-adapter-converter",
@@ -725,7 +729,6 @@
 
 	// {{{ Language: HTML
 	"html.autoClosingTags": false,
-
 	"[html]": {
 		// "explicitFolding.debug": true,
 		"explicitFolding.rules": [
@@ -742,7 +745,6 @@
 	"javascript.format.semicolons": "remove",
 	"javascript.preferences.quoteStyle": "single",
 	"javascript.updateImportsOnFileMove.enabled": "always",
-
 	// "[javascript]": {
 	// "editor.defaultFormatter": "vscode.typescript-language-features",
 	// 	"explicitFolding.debug": true,
@@ -839,10 +841,15 @@
 	// }}}
 
 	// {{{ Language: Markdown
-	// "[markdown]": {
-	// 	"explicitFolding.debug": true,
-	// 	"explicitFolding.rules": [],
-	// },
+	"[markdown]": {
+		// "explicitFolding.debug": true,
+		"explicitFolding.rules": [
+			{
+				"beginRegex": "```formula[-\\(]",
+				"endRegex": "```",
+			},
+		],
+	},
 	// }}}
 
 	// {{{ Language: Plain Text
@@ -978,7 +985,7 @@
 		"editor.foldingStrategy": "indentation",
 	},
 	// }}}
-
+	
 	// "cronTasks.debug": "useBlank",
 	// "cronTasks.tasks": [
 	// 	{

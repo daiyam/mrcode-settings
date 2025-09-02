@@ -1,36 +1,42 @@
 disabled:
   - id: bbenoist.Nix
     uuid: 5b21bd54-5258-4a3e-887f-193d9bb5f063
-  - id: ddiu8081.moegi-theme
-    uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
-  - id: crystal-lang-tools.crystal-lang
-    uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
   - id: dez64ru.macos-modern-theme
     uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
+  - id: ddiu8081.moegi-theme
+    uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
+  - id: bradlc.vscode-tailwindcss
+    uuid: 4db62a7c-7d70-419c-96d2-6c3a4dc77ea5
+  - id: crystal-lang-tools.crystal-lang
+    uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
-  - id: eg2.vscode-npm-script
-    uuid: ae9e3eb0-3357-4cc0-90ee-598d2d384757
   - id: fabiospampinato.vscode-todo-plus
     uuid: 0661e679-8a32-433e-baeb-8980f53edb55
-  - id: hbenl.vscode-test-explorer
-    uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
+  - id: formulahendry.auto-rename-tag
+    uuid: 6e440e71-8ed9-4f25-bb78-4b13096b8a03
+  - id: golang.go
+    uuid: d6f6cfea-4b6f-41f4-b571-6ad2ab7918da
   - id: hbenl.vscode-mocha-test-adapter
     uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
+  - id: hbenl.vscode-test-explorer
+    uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
   - id: huacat.pink-theme
     uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
   - id: jebbs.plantuml
     uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
+  - id: mofosyne.quickcalc
+    uuid: a4a6c49a-b006-4684-b07d-4bbe3462df1b
   - id: rust-lang.rust-analyzer
     uuid: 06574cb4-e5dc-4631-8174-a543a4533621
   - id: samverschueren.linter-xo
     uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: svipas.control-snippets
     uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
-  - id: techer.open-in-browser
-    uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
   - id: webfreak.cute-theme
     uuid: 20d85dba-b575-4edf-ab25-26abc5799c4f
+  - id: techer.open-in-browser
+    uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
 enabled:
   - id: alefragnani.Bookmarks
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
@@ -42,10 +48,6 @@ enabled:
     uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
   - id: bpruitt-goddard.mermaid-markdown-syntax-highlighting
     uuid: 08792992-bb56-41fb-b5dd-8551bbee0cb6
-  - id: bradlc.vscode-tailwindcss
-    uuid: 4db62a7c-7d70-419c-96d2-6c3a4dc77ea5
-  - id: bungcip.better-toml
-    uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: DotJoshJohnson.xml
     uuid: 0cb81da2-1880-4755-9995-0ae9cc728e20
   - id: eamodio.gitlens
@@ -54,10 +56,6 @@ enabled:
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
   - id: formulahendry.auto-close-tag
     uuid: d3836729-9cc1-42c1-b2af-d50071f57d29
-  - id: formulahendry.auto-rename-tag
-    uuid: 6e440e71-8ed9-4f25-bb78-4b13096b8a03
-  - id: franneck94.workspace-formatter
-    uuid: ae91264b-09f6-48f4-b295-9280be2f4125
   - id: hilleer.yaml-plus-json
     uuid: a5c960d9-3d35-4b3f-9d53-bafe782ddf1a
   - id: jeanp413.open-remote-ssh
@@ -66,6 +64,8 @@ enabled:
     uuid: 41c03ed0-b7b8-4476-8d01-926a7e041e69
   - id: kamikillerto.vscode-colorize
     uuid: 445ba381-f232-4150-9056-d790bd76d698
+  - id: langium.langium-vscode
+    uuid: 70af7c9e-d44a-4027-b150-38b9971577d1
   - id: mikestead.dotenv
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
   - id: mitchdenny.ecdc
@@ -78,8 +78,8 @@ enabled:
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: svelte.svelte-vscode
     uuid: c5463f77-75d9-4a25-8cc4-d8541a461285
-  - id: TakumiI.markdowntable
-    uuid: 5a882e99-34b7-4450-a0b1-f1bd94681c7b
+  - id: tamasfe.even-better-toml
+    uuid: b2215d5f-675e-4a2b-b6ac-1ca737518b78
   - id: vscode-icons-team.vscode-icons
     uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
   - id: wolfmah-vscode.just-syntax
@@ -88,8 +88,14 @@ enabled:
     uuid: 94b33df0-4b3f-4d33-a9c5-c756f72bd75c
   - id: zokugun.cron-tasks
     uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
+  - id: zokugun.endofline
+    uuid: 63758023-20a4-49e2-bcc4-4eab38add94b
   - id: zokugun.explicit-folding
     uuid: 6ccb8d60-0e25-4a00-8f74-e8b9ef6133ce
+  - id: zokugun.markdown-ranking-table
+    uuid: 6b2d93a7-5d71-4d31-b74e-6318c1ae2af7
+  - id: zokugun.markdown-table-sort
+    uuid: 99e9ce3e-0592-4523-85e0-8677cdb7b06f
   - id: zokugun.open-to-spick-and-span-window
     uuid: 3a757e40-138d-4a50-a97d-5308ae229cd7
   - id: zokugun.vsix-manager
