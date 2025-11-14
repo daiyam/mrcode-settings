@@ -1,1 +1,13 @@
-This file has been deleted
+disabled: []
+enabled:
+  - id: webfreak.cute-theme
+    uuid: ad13f776-4ac3-4bde-9694-c9d114f6abaa
+uninstall:
+  - id: ArturoDent.custom-language-syntax
+    uuid: 970098e6-fbf4-4b98-8530-995eb86b34f3
+  - id: dez64ru.macos-modern-theme
+    uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
+  - id: jeanp413.open-remote-ssh
+    uuid: 9fc16cea-08e2-4ae5-bf75-224004d722ff
+  - id: svipas.control-snippets
+    uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
