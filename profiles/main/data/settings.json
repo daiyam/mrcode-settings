@@ -178,7 +178,7 @@
 	"terminal.integrated.minimumContrastRatio": 0,
 	"terminal.integrated.scrollback": 10000,
 	"terminal.integrated.tabs.hideCondition": "never",
-	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:",
+	"terminal.integrated.wordSeparators": " ()[]{}',\"`─‘’:\/",
 	// }}}
 
 	// {{{ Update
@@ -197,6 +197,9 @@
 	"workbench.enableExperiments": false,
 	"workbench.editor.decorations.colors": false,
 	"workbench.editor.decorations.badges": false,
+	"workbench.editorAssociations": {
+		"*.svg": "default"
+	},
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.settings.editor": "json",
 	"workbench.settings.enableNaturalLanguageSearch": false,
@@ -272,6 +275,10 @@
 				{
 					"label": "fix",
 					"description": "Changes related to bug fixes"
+				},
+				{
+					"label": "i18n",
+					"description": "Changes related to translation and localization"
 				},
 				{
 					"label": "perf",

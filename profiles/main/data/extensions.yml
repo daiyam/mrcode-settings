@@ -1,14 +1,10 @@
 disabled:
   - id: bbenoist.Nix
     uuid: 5b21bd54-5258-4a3e-887f-193d9bb5f063
-  - id: dez64ru.macos-modern-theme
-    uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
-  - id: ddiu8081.moegi-theme
-    uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
   - id: bradlc.vscode-tailwindcss
     uuid: 4db62a7c-7d70-419c-96d2-6c3a4dc77ea5
-  - id: crystal-lang-tools.crystal-lang
-    uuid: 5016b019-8262-4dd2-91c1-f54864d60b5f
+  - id: dez64ru.macos-modern-theme
+    uuid: 38ad76ae-2cd0-4962-8c5f-eb6b138b0ca3
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
   - id: fabiospampinato.vscode-todo-plus
@@ -25,18 +21,22 @@ disabled:
     uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
   - id: jebbs.plantuml
     uuid: d95cb424-7a5a-4e08-9698-107d6fd590cf
+  - id: mitchdenny.ecdc
+    uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
   - id: mofosyne.quickcalc
     uuid: a4a6c49a-b006-4684-b07d-4bbe3462df1b
+  - id: redhat.vscode-yaml
+    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: rust-lang.rust-analyzer
     uuid: 06574cb4-e5dc-4631-8174-a543a4533621
   - id: samverschueren.linter-xo
     uuid: fc140617-fb59-426a-87d2-e810904d10cf
   - id: svipas.control-snippets
     uuid: 96dfa5b7-f8cb-4e56-b165-93bb512692d7
-  - id: webfreak.cute-theme
-    uuid: 20d85dba-b575-4edf-ab25-26abc5799c4f
   - id: techer.open-in-browser
     uuid: fef63133-dae3-40fb-b81d-6da7617b4b1e
+  - id: webfreak.cute-theme
+    uuid: 20d85dba-b575-4edf-ab25-26abc5799c4f
 enabled:
   - id: alefragnani.Bookmarks
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
@@ -68,14 +68,10 @@ enabled:
     uuid: 70af7c9e-d44a-4027-b150-38b9971577d1
   - id: mikestead.dotenv
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
-  - id: mitchdenny.ecdc
-    uuid: 816d44eb-5e28-431b-be81-2c52551d81ea
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: paragdiwan.gitpatch
     uuid: 1c2d0e20-1a4e-4d22-a8bb-be29a274bf49
-  - id: redhat.vscode-yaml
-    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: svelte.svelte-vscode
     uuid: c5463f77-75d9-4a25-8cc4-d8541a461285
   - id: tamasfe.even-better-toml

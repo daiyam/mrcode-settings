@@ -198,5 +198,13 @@
     {
         "key": "shift+alt+f",
         "command": "-search-presets.search"
+    },
+    {
+        "key": "cmd+e cmd+q",
+        "command": "workbench.action.quit"
+    },
+    {
+        "key": "cmd+q",
+        "command": "-workbench.action.quit"
     }
 ]
