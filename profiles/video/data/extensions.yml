@@ -1,10 +1,24 @@
 disabled:
+  - id: astro-build.astro-vscode
+    uuid: 1fbbc8b0-7432-4b7e-8774-3336151da2f3
+  - id: DotJoshJohnson.xml
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: langium.langium-vscode
+    uuid: 70af7c9e-d44a-4027-b150-38b9971577d1
+  - id: ms-vscode-remote.remote-ssh
+    uuid: 607fd052-be03-4363-b657-2bd62b83d28a
+  - id: ms-vscode-remote.remote-ssh-edit
+    uuid: bfeaf631-bcff-4908-93ed-fda4ef9a0c5c
+  - id: ms-vscode.remote-explorer
+    uuid: 11858313-52cc-4e57-b3e4-d7b65281e34b
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
-  - id: redhat.vscode-yaml
-    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
+  - id: svelte.svelte-vscode
+    uuid: c5463f77-75d9-4a25-8cc4-d8541a461285
   - id: vscode-icons-team.vscode-icons
     uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
+  - id: wolfmah-vscode.just-syntax
+    uuid: f7777eae-f1cc-4069-b2c5-d177033d3839
   - id: zokugun.zokugun-theme
     uuid: 93474243-9833-480b-ab2d-637000ce973d
 enabled:
@@ -12,10 +26,6 @@ enabled:
     uuid: ad4ee4d7-9d78-49e4-801e-b2fef4eaff6e
   - id: ddiu8081.moegi-theme
     uuid: ad89b35d-addd-453b-bb3e-3b1b400e983b
-  - id: huacat.pink-theme
-    uuid: e8993529-08f5-421e-8f2f-e0e18dba48d0
-  - id: ms-vscode.remote-explorer
-    uuid: 11858313-52cc-4e57-b3e4-d7b65281e34b
 uninstall:
   - id: ArturoDent.custom-language-syntax
     uuid: 970098e6-fbf4-4b98-8530-995eb86b34f3
